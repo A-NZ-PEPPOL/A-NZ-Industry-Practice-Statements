@@ -13,5 +13,5 @@ The following documents have been created to address emerging business and/or te
 
 ## Feedback
 Please do not hesitate to contact us if you have any feedback on how this repository can be improved. You can do so by contacting your respective Peppol Authority.
-* New Zealand PEPPOL Authority - [support@nzpeppol.govt.nz](mailto:support@nzpeppol.govt.nz)
+* New Zealand Peppol Authority - [support@nzpeppol.govt.nz](mailto:support@nzpeppol.govt.nz)
 * Australian Peppol Authority - [eInvoicing@ato.gov.au](mailto:einvoicing@ato.gov.au)
