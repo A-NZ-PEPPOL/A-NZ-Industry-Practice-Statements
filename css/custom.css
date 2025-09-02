@@ -1,0 +1,78 @@
+/* === ATO-style Custom Styling for Just the Docs === */
+
+/* Add spacing and border below header image */
+.site-header img {
+  margin-bottom: 20px;
+  border-bottom: 3px solid #004785; /* ATO-style blue */
+}
+
+/* Style page headings */
+h1, h2, h3 {
+  color: #004785; /* professional dark blue */
+}
+
+h1 {
+  font-size: 2.2rem;
+  border-bottom: 2px solid #004785;
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+}
+
+
+/* Sidebar styling */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem; /* Push sidebar content down */
+}
+
+/* Move sidebar title down */
+.sidebar .site-title {
+  padding-top: 1rem;
+  display: block;
+}
+
+/* Move search bar to sidebar */
+.sidebar .search {
+  order: 2;
+  position: static;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+/* ATO-style link colors */
+a {
+  color: #004785;
+}
+
+a:hover {
+  color: #002d5c;
+  text-decoration: underline;
+}
+
+/* ATO-style sidebar nav */
+.nav-list .nav-list-item {
+  border-left: 3px solid #004785;
+  padding-left: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar .search {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .main-content {
+    margin-top: 2rem;
+  }
+}
