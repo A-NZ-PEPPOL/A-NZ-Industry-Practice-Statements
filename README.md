@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/header.jpg" alt="Header Image" width="100%">
+</p>
+
 # A-NZ-Industry-Practice-Statements
 This repository contains Industry Practice Statements and documents which include guidance, recommendations, business considerations and use cases that aim to support Peppol implementation and to enhance interoperability in Australia and New Zealand.
 
