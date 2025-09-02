@@ -1,3 +1,11 @@
+---
+title: Guidance and Recommendations for Consistent Data Mapping
+---
+
+<p align="center">
+  <img src="assets/header.jpg" alt="Header Image" width="100%">
+</p>
+
 # A-NZ Industry Practice Statement
 **Guidance and Recommendations for Consistent Data Mapping**  
 **Version:** 1.0  
