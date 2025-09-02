@@ -1,0 +1,23 @@
+title: A-NZ Industry Practice Statements
+description: >
+  This site provides a range of guides to support the development of
+  an A-NZ compliant Peppol Access Point or Service Metadata Publisher.
+remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
+sass:
+  style: expanded
+# Point to the custom CSS
+just_the_docs:
+  css:
+    - assets/css/custom.css
+
+# Navigation (will show in sidebar/top depending on theme)
+nav:
+  - title: Home
+    url: /
+  - title: Guidance and Recommendations for Consistent Data Mapping
+    url: /A-NZ ASWG_Consistent Data Mapping
+  - title: 2
+    url: /
+    
