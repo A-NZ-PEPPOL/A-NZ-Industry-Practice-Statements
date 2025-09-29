@@ -1,5 +1,5 @@
 ---
-title: Guidance and Recommendations for Consistent Data Mapping
+title: IPS: Understanding and managing attachments in eInvoices and eCredit Notes
 ---
 
 <p align="center">
