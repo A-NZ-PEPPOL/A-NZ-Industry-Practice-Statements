@@ -1,5 +1,5 @@
 ---
-title: IPS- Understanding and managing attachments in eInvoices and eCredit Notes
+title: Understanding and managing attachments in eInvoices and eCredit Notes
 ---
 
 <p align="center">
