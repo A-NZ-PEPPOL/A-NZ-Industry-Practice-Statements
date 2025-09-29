@@ -1,6 +1,14 @@
+---
+title: Invoice content A-NZ industry practice statement
+---
+
+<p align="center">
+  <img src="assets/header.jpg" alt="Header Image" width="100%">
+</p>
+
 # A-NZ industry practice statement Invoice content
 
-Version history
+**Version history**
 
 | Date | Version | Changes |
 |----|----|----|
