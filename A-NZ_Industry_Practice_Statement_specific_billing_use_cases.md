@@ -1,5 +1,5 @@
 ---
-title: IPS- Guidance and implementation options for specific billing scenarios
+title: Guidance and implementation options for specific billing scenarios
 ---
 
 <p align="center">
