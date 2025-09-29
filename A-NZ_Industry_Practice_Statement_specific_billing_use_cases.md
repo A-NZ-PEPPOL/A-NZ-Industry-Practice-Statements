@@ -1,5 +1,5 @@
 ---
-title: Guidance and Recommendations for Consistent Data Mapping
+title: IPS- Guidance and implementation options for specific billing scenarios
 ---
 
 <p align="center">
@@ -8,11 +8,11 @@ title: Guidance and Recommendations for Consistent Data Mapping
 
 # A-NZ Industry Practice Statement
 
-Guidance and implementation options for specific billing scenarios
+## Guidance and implementation options for specific billing scenarios
 
-Version: 1.0
+**Version: 1.0**
 
-Publication Date: April 2023
+**Publication Date: April 2023**
 
 Contact the local Peppol Authority for questions or feedback:
 
