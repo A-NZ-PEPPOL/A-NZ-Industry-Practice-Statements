@@ -7,9 +7,11 @@ title: Guidance and Recommendations for Consistent Data Mapping
 </p>
 
 # A-NZ Industry Practice Statement
-**Guidance and Recommendations for Consistent Data Mapping**  
+# Guidance and Recommendations for Consistent Data Mapping
 **Version:** 1.0  
 **Publication Date:** 9 September 2022  
+
+📄 File available for download [here](Update the link)
 
 ---
 
@@ -66,17 +68,21 @@ Consistent mapping and usage of the specification is key to ensure automation an
 
 A joint industry working group developed the [Invoice Contents Industry Practice Statement (IPS)[^1]](https://github.com/A-NZ-PEPPOL/A-NZ-Industry-Practice-Statements/blob/main/A-NZ_Industry_Practice_Statement_%20Invoice_Content_v1.1.docx) in 2020, which discussed buyers’ common data requirements and different systems capabilities. A few overarching principles from the IPS documents were reiterated by the Consistent Data Mapping focus group and it was agreed that the following principles should be adhered to by all participants:
 
-### 1. When sending invoices:
+ 1. When sending invoices:
 
-- **a.** When the seller (corner 1, or C1) has the data, it should be provided in the invoice XML message.  
-- **b.** The seller and the sending solution should ensure invoice business terms are used according to their semantic definitions, as per the [<u>A-NZ Peppol Invoice Specification</u>](https://github.com/A-NZ-PEPPOL/A-NZ-PEPPOL-BIS-3.0). 
-  - **i.** The sending solution may not support some invoice data, such as complex item identification information. Peppol supports a number of multi-purpose, free-text fields and users should refer to the Mapping Questions and Guidance section in this document for recommendations.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**a.** When the seller (corner 1, or C1) has the data, it should be provided in the invoice XML message.  
 
-### 2. When receiving invoices:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**b.** The seller and the sending solution should ensure invoice business terms are used according to their semantic definitions, as per the [<u>A-NZ Peppol Invoice Specification</u>](https://github.com/A-NZ-PEPPOL/A-NZ-PEPPOL-BIS-3.0). 
 
-- **a.** When the buyer (corner 4, or C4) has been provided with the required information on the invoice, they should endeavour to ‘search for’ this information in all reference and contact fields to process the invoice where possible.  
-- **b.** The receiving solutions (both access points and buyer/receiver’s solution) should ensure the full Peppol message is accessible.  
-  - **i.** The receiving solutions should be able to receive attachments that are transmitted with a Peppol eInvoice.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**i.** The sending solution may not support some invoice data, such as complex item identification information. Peppol supports a number of multi-purpose, free-text fields and users should refer to the **Mapping Questions and Guidance** section in this document for recommendations.  
+
+ 2. When receiving invoices:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**a.** When the buyer (corner 4, or C4) has been provided with the required information on the invoice, they should endeavour to ‘search for’ this information in all reference and contact fields to process the invoice where possible.  
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**b.** The receiving solutions (both access points and buyer/receiver’s solution) should ensure the full Peppol message is accessible.  
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**i.** The receiving solutions should be able to receive attachments that are transmitted with a Peppol eInvoice.  
 
 It is acknowledged that
 
@@ -125,7 +131,7 @@ This section lists the mapping questions that were discussed by the group and th
 
 ---
 
-## Attachment File Name and Path
+## 2. Attachment File Name and Path
 
 **\*Note:** A separate [focus
 group](https://www.dspanz.org/committees/peppol/anz-peppol-all-stakeholders-working-group/attachments/)
@@ -318,7 +324,7 @@ code list</a>, e.g. image/jpeg”.</td>
 
 ---
 
-## How to convey non-Financial Delivery Information
+## 3. How to convey non-Financial Delivery Information
 
 **Issue Statement:** An invoice may contain details for delivery
 arrangements, such as freight terms, origin of delivery or tracking of
@@ -407,7 +413,7 @@ below:
 ---
 
 
-## Freight and Delivery Charges
+## 4. Freight and Delivery Charges
 
 **Issue statement:** Peppol has designated fields to support both
 invoice-level and line-level charges. Some sellers do not have the
@@ -580,14 +586,14 @@ and be flexible to support all options.
 
 ---
 
-## Discounts
+## 5. Discounts
 
 Discounts are recommended to be applied in the same way as freight and
 delivery charges (see above).
 
 ---
 
-## Calculated Invoice Quantity
+## 6. Calculated Invoice Quantity
 
 **Issue statement:** Peppol eInvoice has a designated field for invoiced
 item quantity (cbc:InvoicedQuantity). Quantities may also be determined
@@ -655,7 +661,7 @@ is recommended to use cbc:Description (free text).
 ---
 
 
-## Asset/Equipment Identifiers
+## 7. Asset/Equipment Identifiers
 
 **Issue statement:**
 
@@ -783,7 +789,7 @@ access the information.
 
 ---
 
-## Purchase Order Number and Buyer Reference
+## 8. Purchase Order Number and Buyer Reference
 
 **Issue Statement:**
 
@@ -854,7 +860,7 @@ needs, and should
 endeavour to ‘search for’ required information in other reference and
 contact fields to process the invoice where possible.
 
-## Organisational specific / Seller assigned client account number 
+## 9. Organisational specific / Seller assigned client account number 
 
 **Issue statement:** There are scenarios where an invoice is specific to
 an account, location, or business branch/unit. An invoice needs to
@@ -927,7 +933,7 @@ customer/account number (123abc).*
 
 ---
 
-## Party Identification
+## 10. Party Identification
 
 **For clarification:** Peppol supports multiple fields for party
 identification information such as its legal entity ID, branch ID, or
@@ -1034,6 +1040,8 @@ GST number must be entered as the value.</p></td>
 3.  Inconsistent interpretation and system capability relating to the
     eInvoice field Base Quantity.
 
+    ---
+
 **Recommendation:**
 
 1.  The group discussed the issue of UOM mismatch between an invoice and
@@ -1138,7 +1146,7 @@ calculated incorporating base quantity and will therefore be accurate.
 
 ---
 
-## Usage Details 
+## 12. Usage Details 
 
 **Issue statement:**
 
@@ -1149,6 +1157,8 @@ calculated incorporating base quantity and will therefore be accurate.
 > is not expected to be required or processed by accounts payable
 > systems, but still needs to be made available to the client in some
 > format.
+>
+> ---
 
 **Recommendation:**
 
