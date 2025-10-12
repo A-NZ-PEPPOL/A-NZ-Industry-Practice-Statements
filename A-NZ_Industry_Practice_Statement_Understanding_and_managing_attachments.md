@@ -8,13 +8,18 @@ title: Understanding and managing attachments in eInvoices and eCredit Notes
 
 # A-NZ PEPPOL INDUSTRY PRACTICE STATEMENT
 
-## Understanding and managing attachments in eInvoices and eCredit Notes
+# Understanding and managing attachments in eInvoices and eCredit Notes
 
-Version: 1.0
+**Version: 1.0**
 
-Publication Date: May 2023
+**Publication Date: May 2023**
 
-### PURPOSE 
+
+📄 File available for download [here](Update the link)
+
+---
+
+## PURPOSE 
 
 This document has been developed by the Attachment focus group (the
 group) which was formed as part of the [A-NZ Peppol All Stakeholders
@@ -48,7 +53,9 @@ group](https://www.dspanz.org/committees/peppol/anz-peppol-all-stakeholders-work
 and/or as the global Peppol market matures, as new challenges arise, or
 as Peppol standards evolve.
 
-### CONTEXT
+---
+
+## CONTEXT
 
 Although Peppol has specified the minimum size and format of attachments
 that Peppol Access Point providers must support for eInvoices and
@@ -63,9 +70,11 @@ that better understanding of Peppol attachments and solution
 capabilities is required to promote consistent support and to maximise
 positive client experiences.
 
-### KEY FINDINGS AND GUIDANCE
+---
 
-#### What is supported by Peppol
+## KEY FINDINGS AND GUIDANCE
+
+### 1. What is supported by Peppol
 
 The Peppol A-NZ Invoice (and Credit note) specification supports the
 following for embedded attachments:
@@ -95,7 +104,7 @@ system restrictions for accessing and/or processing URI/URLs.
 The use of URI/URL is not common across the network in Australia or New
 Zealand when this document is developed.
 
-#### Recommended Mapping of Attachment metadata in an A-NZ Peppol eInvoice
+### 2. Recommended Mapping of Attachment metadata in an A-NZ Peppol eInvoice
 
 When including attachment(s) in an eInvoice, a number of UBL XML fields
 need to be populated.
@@ -113,7 +122,7 @@ website](https://www.dspanz.org/committees/peppol/anz-peppol-all-stakeholders-wo
 and the [A-NZ Peppol Github
 site](https://github.com/A-NZ-PEPPOL/A-NZ-Industry-Practice-Statements/blob/main/A-NZ%20ASWG_Consistent%20Data%20Mapping%201.0.docx).
 
-#### Use cases
+### 3. Use cases
 
 The group discussed a number of scenarios where attachments may be
 included in an eInvoice.
@@ -186,7 +195,7 @@ seller then needs to provide the ‘evidence’, e.g. a scanned image of the
 document with the signature, as an attachment when invoicing the buyer’s
 accounts payable team.
 
-#### Solution capability overview
+### 4. Solution capability overview
 
 The group gathered information from participants on BMS solutions’
 capabilities to support attachments:
@@ -215,7 +224,7 @@ capabilities to support attachments:
   confirmed that outbound attachments will be virus scanned (noting that
   other security controls may be employed).
 
-#### General principles and guidelines
+### 5. General principles and guidelines
 
 During the discussions, the group agreed on a number of high-level
 principles and guidelines for dealing with attachments.
@@ -259,7 +268,9 @@ C4.
     education to end users to understand business requirements and
     system restrictions for attachments.
 
-### CONSIDERATIONS FOR END USERS
+---
+
+## CONSIDERATIONS FOR END USERS
 
 Considering the varying capabilities and BMS service offerings, this
 section aims to provide some considerations to assist end users to
@@ -289,7 +300,7 @@ attachments.
 
 <!-- -->
 
-- **Virus scanning and other security controls for attachments  **
+- **Virus scanning and other security controls for attachments**
   Whether the chosen provider(s) have implemented industry best
   practices and measures, and alignment with the end-user’s
   organisational security standards.
@@ -314,20 +325,20 @@ attachments.
     Australia: [Tax invoices \| Australian Taxation Office
     (ato.gov.au)](https://www.ato.gov.au/business/gst/tax-invoices/)
 
-> New Zealand: [Tax invoices for GST
-> (ird.govt.nz)](https://www.ird.govt.nz/gst/tax-invoices-for-gst)
+     New Zealand: [Tax invoices for GST
+ (ird.govt.nz)](https://www.ird.govt.nz/gst/tax-invoices-for-gst)
 
-- Depending on the business processes, receivers (buyers) may use either
+  - Depending on the business processes, receivers (buyers) may use either
   or both the attachment and eInvoice XML data for various accounting
   and/or business purposes.
 
-- The group acknowledged that sometimes the attached invoice and XML are
+  - The group acknowledged that sometimes the attached invoice and XML are
   generated in different systems. Senders (sellers) need to ensure that
   there is no conflict between the attachment and the eInvoice/ XML.
 
-#### 
+---
 
-### Version history
+## Version history
 
 | **Version** | **Date** | **Change** |
 |----|----|----|
