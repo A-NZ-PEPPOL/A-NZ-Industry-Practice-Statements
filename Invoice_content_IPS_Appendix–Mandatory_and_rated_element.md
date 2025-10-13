@@ -12,6 +12,8 @@ layout: default
 
 This is a quick reference guide showing all PINT A-NZ Billing specification elements that are either mandatory according to the specification or discussed in the Invoice Content Industry Practice Statement (IPS). It omits all other invoice elements and, as such, is incomplete for the purposes of building a Peppol invoicing solution. As noted in the Invoice Content IPS, 'required for interoperability' and 'recommended' elements should be included when appropriate, but may not be relevant for some end users and will not necessarily have to appear on every eInvoice.
 
+📄 Copy available for download [here](https://github.com/A-NZ-PEPPOL/A-NZ-Industry-Practice-Statements/blob/Dev-IPS-2025/Invoice_content_IPS_Appendix%E2%80%93Mandatory_and_rated_element.xlsx)
+
 ---
 
 |  BT ID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  | Term | Description | Rating |
