@@ -8,11 +8,13 @@ title: Guidance and implementation options for specific billing scenarios
 
 # A-NZ Industry Practice Statement
 
-## Guidance and implementation options for specific billing scenarios
+# Guidance and implementation options for specific billing scenarios
 
 **Version: 1.0**
 
 **Publication Date: April 2023**
+
+📄 File available for download [here](Update the link)
 
 Contact the local Peppol Authority for questions or feedback:
 
@@ -21,6 +23,8 @@ Contact the local Peppol Authority for questions or feedback:
 
 - New Zealand:
   [<u>support@nzpeppol.govt.nz</u>](mailto:support@nzpeppol.govt.nz)
+
+  ---
 
 ## Background
 
@@ -44,6 +48,8 @@ including large businesses (energy retailers and customers), bookkeepers
 (representing large and small customers) and software solution
 providers, to identify how eInvoicing can support common billing
 scenarios.
+
+---
 
 ## Purpose
 
@@ -72,6 +78,8 @@ Group</u>](https://www.dspanz.org/committees/peppol/anz-peppol-all-stakeholders-
 this is a living document that may be updated based on feedback and/or
 new billing scenarios that are raised.
 
+---
+
 ## Useful resources:
 
 - [<u>Sample eInvoices/credit notes for different billing
@@ -89,6 +97,8 @@ new billing scenarios that are raised.
   guidance</u>](https://github.com/A-NZ-PEPPOL/A-NZ-Industry-Practice-Statements/blob/main/A-NZ%20ASWG_Consistent%20Data%20Mapping%201.0.docx)
   developed by [<u>the A-NZ Peppol Stakeholders Working
   Group</u>](https://www.dspanz.org/committees/peppol/anz-peppol-all-stakeholders-working-group/consistent-data-mapping-focus-group/)
+
+---
 
 ## eInvoicing considerations in general 
 
@@ -148,7 +158,7 @@ eInvoicing:
   use, customers will need to allocate the costs accordingly, as they do
   today, through manual adjustments in their systems.
 
-#### Recommendations
+### Recommendations
 
 Considering the above, the following approaches can be considered.
 
@@ -194,6 +204,8 @@ Considering the above, the following approaches can be considered.
     might not store multiple payment methods and instructions, and
     customers may need to refer to the PDF for payment options.
 
+---
+
 ## Use cases
 
 ### Use Case 1 – Billing to a third party
@@ -234,33 +246,22 @@ advised by the customer/third-party to:
 Buyer’s legal / business identifier may be different from its Endpoint
 ID.
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr>
-<td><p>&lt;cac:AccountingCustomerParty&gt; &lt;!-- Buyer/customer
-details --&gt;</p>
-<blockquote>
-<p>&lt;cac:Party&gt;</p>
-<p>&lt;cbc:EndpointID
-schemeID="0151"&gt;58725115040&lt;/cbc:EndpointID&gt;</p>
-<p>&lt;!-- Buyer/customer 'Peppol ID' --&gt;</p>
-<p>…</p>
-<p>&lt;cac:PartyLegalEntity&gt;</p>
-<p>&lt;cbc:RegistrationName&gt;Trotters
-Incorporated&lt;/cbc:RegistrationName&gt;</p>
-<p>&lt;cbc:CompanyID
-schemeID="0151"&gt;91888222000&lt;/cbc:CompanyID&gt;</p>
-<p>&lt;!-- Buyer/customer ABN --&gt;</p>
-<p>&lt;/cac:PartyLegalEntity&gt;</p>
-<p>&lt;/cac:Party&gt;</p>
-</blockquote>
-<p>&lt;/cac:AccountingCustomerParty&gt;</p></td>
-</tr>
-</tbody>
-</table>
+```xml
+<cac:AccountingCustomerParty> <!-- Buyer/customer details -->
+  <cac:Party>
+    <cbc:EndpointID schemeID="0151">58725115040</cbc:EndpointID> 
+    <!-- Buyer/customer 'Peppol ID' -->
+    ...
+    <cac:PartyLegalEntity>
+      <cbc:RegistrationName>Trotters Incorporated</cbc:RegistrationName>
+      <cbc:CompanyID schemeID="0151">91888222000</cbc:CompanyID>
+      <!-- Buyer/customer ABN -->
+    </cac:PartyLegalEntity>
+  </cac:Party>
+</cac:AccountingCustomerParty>
+
+```
+---
 
 ### Use Case 2 – Opening balance in arrears or in credit
 
@@ -341,45 +342,28 @@ AUD\$159.43 (plus 10% GST) and solar rebate of AUD\$13.50 (no GST in
 this example – e.g. a micro business not required to be registered), the
 eInvoice XML could include these amounts:
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr>
-<td><p>Invoice totals:</p>
-<p><mark>&lt;cbc:TaxAmount
-currencyID=<strong>"AUD"</strong>&gt;<strong>15.94</strong>&lt;/cbc:TaxAmount&gt;</mark></p>
-<p><mark>&lt;cbc:LineExtensionAmount
-currencyID=<strong>"AUD"</strong>&gt;<strong>145.93</strong>&lt;/cbc:LineExtensionAmount&gt;</mark></p>
-<p><mark>&lt;cbc:TaxExclusiveAmount
-currencyID=<strong>"AUD"</strong>&gt;<strong>145.93</strong>&lt;/cbc:TaxExclusiveAmount&gt;</mark></p>
-<p><mark>&lt;cbc:TaxInclusiveAmount
-currencyID=<strong>"AUD"</strong>&gt;<strong>161.87</strong>&lt;/cbc:TaxInclusiveAmount&gt;</mark></p>
-<p><mark>&lt;cbc:PayableAmount
-currencyID=<strong>"AUD"</strong>&gt;<strong>161.87</strong>&lt;/cbc:PayableAmount&gt;</mark></p>
-<p>Invoice Lines:</p>
-<p><mark>&lt;cbc:ID&gt;<strong>1</strong>&lt;/cbc:ID&gt; &lt;!-- Line
-with 10% GST --&gt;</mark></p>
-<p><mark>&lt;cbc:LineExtensionAmount
-currencyID=<strong>"AUD"</strong>&gt;<strong>129.04</strong>&lt;/cbc:LineExtensionAmount&gt;</mark></p>
-<p><mark>&lt;cbc:Name&gt;<strong>Electricity charges - all day rate NMI
-9000074677</strong>&lt;/cbc:Name&gt;</mark></p>
-<p><mark>&lt;cbc:ID&gt;<strong>2</strong>&lt;/cbc:ID&gt; &lt;!-- Line
-with zero GST --&gt;</mark></p>
-<p><mark>&lt;cbc:LineExtensionAmount
-currencyID=<strong>"AUD"</strong>&gt;<strong>-13.50</strong>&lt;/cbc:LineExtensionAmount&gt;</mark></p>
-<p><mark>&lt;cbc:Name&gt;<strong>Solar feed-in rebate NMI
-9000074677</strong>&lt;/cbc:Name&gt;</mark></p>
-<p><mark>&lt;cbc:ID&gt;<strong>3</strong>&lt;/cbc:ID&gt; &lt;!-- Line
-with 10% GST --&gt;</mark></p>
-<p><mark>&lt;cbc:LineExtensionAmount
-currencyID=<strong>"AUD"</strong>&gt;<strong>30.39</strong>&lt;/cbc:LineExtensionAmount&gt;</mark></p>
-<p><mark>&lt;cbc:Name&gt;<strong>Supply
-charge</strong>&lt;/cbc:Name&gt;</mark></p></td>
-</tr>
-</tbody>
-</table>
+```xml
+
+  <!-- Invoice Totals: -->
+  <cbc:TaxAmount currencyID="AUD">15.94</cbc:TaxAmount>
+  <cbc:LineExtensionAmount currencyID="AUD">145.93</cbc:LineExtensionAmount>
+  <cbc:TaxExclusiveAmount currencyID="AUD">145.93</cbc:TaxExclusiveAmount>
+  <cbc:TaxInclusiveAmount currencyID="AUD">161.87</cbc:TaxInclusiveAmount>
+  <cbc:PayableAmount currencyID="AUD">161.87</cbc:PayableAmount>
+
+  <!-- Invoice Lines: -->
+    <cbc:ID>1</cbc:ID> <!-- Line with 10% GST -->
+    <cbc:LineExtensionAmount currencyID="AUD">129.04</cbc:LineExtensionAmount>
+    <cbc:Name>Electricity charges - all day rate NMI 9000074677</cbc:Name>
+
+    <cbc:ID>2</cbc:ID> <!-- Line with zero GST -->
+    <cbc:LineExtensionAmount currencyID="AUD">-13.50</cbc:LineExtensionAmount>
+    <cbc:Name>Solar feed-in rebate NMI 9000074677</cbc:Name>
+
+    <cbc:ID>3</cbc:ID> <!-- Line with 10% GST -->
+    <cbc:LineExtensionAmount currencyID="AUD">30.39</cbc:LineExtensionAmount>
+    <cbc:Name>Supply charge</cbc:Name>
+```
 
 Full xml example [<u>available
 here</u>](https://github.com/A-NZ-PEPPOL/A-NZ-PEPPOL-BIS-3.0/blob/master/Message%20examples/AU%20Invoice%20Energy%20Bill%20Example_1.xml).
@@ -387,14 +371,16 @@ here</u>](https://github.com/A-NZ-PEPPOL/A-NZ-PEPPOL-BIS-3.0/blob/master/Message
 The above eInvoice might be displayed in the buyer’s software UI as
 follows (noting the *Amount due* and the optional *Note*):
 
-<img src="./media/media/image1.png"
-style="width:6.29167in;height:1.9375in" />
+<img src="assets/PIC2.jpg"
+width="100%">
 
 The attached PDF bill might display amounts in the form of an account
 statement that could look like:
 
-<img src="./media/media/image2.png"
-style="width:3.94167in;height:2.30366in" />
+<img src="assets/PIC3.jpg"
+width="50%">
+
+---
 
 ### Use Case 3 – Conditional discount
 
@@ -438,60 +424,44 @@ this example), and a possible discount of 3.5% of \$175.37 = \$6.14
 (calculated on the charges excluding the solar rebate), the eInvoice XML
 could include these amounts as follows:
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr>
-<td><p>Invoice totals:</p>
-<p><mark>&lt;cbc:TaxAmount
-currencyID=<strong>"AUD"</strong>&gt;<strong>15.94</strong>&lt;/cbc:TaxAmount&gt;</mark></p>
-<p><mark>&lt;cbc:LineExtensionAmount
-currencyID=<strong>"AUD"</strong>&gt;<strong>145.93</strong>&lt;/cbc:LineExtensionAmount&gt;</mark></p>
-<p><mark>&lt;cbc:TaxExclusiveAmount
-currencyID=<strong>"AUD"</strong>&gt;<strong>145.93</strong>&lt;/cbc:TaxExclusiveAmount&gt;</mark></p>
-<p><mark>&lt;cbc:TaxInclusiveAmount
-currencyID=<strong>"AUD"</strong>&gt;<strong>161.87</strong>&lt;/cbc:TaxInclusiveAmount&gt;</mark></p>
-<p><mark>&lt;cbc:PayableAmount
-currencyID=<strong>"AUD"</strong>&gt;<strong>161.87</strong>&lt;/cbc:PayableAmount&gt;</mark></p>
-<p>Invoice Lines:</p>
-<p><mark>&lt;cbc:ID&gt;<strong>1</strong>&lt;/cbc:ID&gt; &lt;!-- Line
-with 10% GST --&gt;</mark></p>
-<p><mark>&lt;cbc:LineExtensionAmount
-currencyID=<strong>"AUD"</strong>&gt;<strong>129.04</strong>&lt;/cbc:LineExtensionAmount&gt;</mark></p>
-<p><mark>&lt;cbc:Name&gt;<strong>Electricity charges - all day rate NMI
-9000074677</strong>&lt;/cbc:Name&gt;</mark></p>
-<p><mark>&lt;cbc:ID&gt;<strong>2</strong>&lt;/cbc:ID&gt; &lt;!-- Line
-with zero GST --&gt;</mark></p>
-<p><mark>&lt;cbc:LineExtensionAmount
-currencyID=<strong>"AUD"</strong>&gt;<strong>-13.50</strong>&lt;/cbc:LineExtensionAmount&gt;</mark></p>
-<p><mark>&lt;cbc:Name&gt;<strong>Solar feed-in rebate NMI
-9000074677</strong>&lt;/cbc:Name&gt;</mark></p>
-<p><mark>&lt;cbc:ID&gt;<strong>3</strong>&lt;/cbc:ID&gt; &lt;!-- Line
-with 10% GST --&gt;</mark></p>
-<p><mark>&lt;cbc:LineExtensionAmount
-currencyID=<strong>"AUD"</strong>&gt;<strong>30.39</strong>&lt;/cbc:LineExtensionAmount&gt;</mark></p>
-<p><mark>&lt;cbc:Name&gt;<strong>Supply
-charge</strong>&lt;/cbc:Name&gt;</mark></p></td>
-</tr>
-</tbody>
-</table>
+```xml
 
+<!-- Invoice Totals -->
+<cbc:TaxAmount currencyID="AUD">15.94</cbc:TaxAmount>
+<cbc:LineExtensionAmount currencyID="AUD">145.93</cbc:LineExtensionAmount>
+<cbc:TaxExclusiveAmount currencyID="AUD">145.93</cbc:TaxExclusiveAmount>
+<cbc:TaxInclusiveAmount currencyID="AUD">161.87</cbc:TaxInclusiveAmount>
+<cbc:PayableAmount currencyID="AUD">161.87</cbc:PayableAmount>
+
+<!-- Invoice Lines -->
+<cbc:ID>1</cbc:ID> <!-- Line with 10% GST -->
+<cbc:LineExtensionAmount currencyID="AUD">129.04</cbc:LineExtensionAmount>
+<cbc:Name>Electricity charges - all day rate NMI 9000074677</cbc:Name>
+
+<cbc:ID>2</cbc:ID> <!-- Line with zero GST -->
+<cbc:LineExtensionAmount currencyID="AUD">-13.50</cbc:LineExtensionAmount>
+<cbc:Name>Solar feed-in rebate NMI 9000074677</cbc:Name>
+
+<cbc:ID>3</cbc:ID> <!-- Line with 10% GST -->
+<cbc:LineExtensionAmount currencyID="AUD">30.39</cbc:LineExtensionAmount>
+<cbc:Name>Supply charge</cbc:Name>
+```
 Full xml example [<u>available
 here</u>](https://github.com/A-NZ-PEPPOL/A-NZ-PEPPOL-BIS-3.0/blob/master/Message%20examples/AU%20Invoice%20Energy%20Bill%20Example_2.xml).
 
 Which might be displayed in the buyer’s software UI as follows (noting
 the *Amount due* and the optional *Note*):
 
-<img src="./media/media/image3.png"
-style="width:6.29861in;height:1.93889in" />
+<img src="assets/PIC4.JPG"
+width="100%">
 
 For comparison, the attached PDF bill might display two ‘amount due’
 values that could look like:
 
-<img src="./media/media/image4.png"
-style="width:4.70517in;height:2.61825in" />
+<img src="assets/PIC5.JPG"
+width="65%">
+
+---
 
 ### Use Case 4 – Consolidated invoices
 
@@ -520,6 +490,8 @@ Some suppliers and customers may use the automation benefits of
 eInvoicing as a catalyst to reconsider their business processes, e.g.
 may change to send multiple separate invoices if that will assist in
 reducing manual handling or optimise automated processing.
+
+---
 
 ### Use Case 5 – Adjusting a previous bill
 
@@ -586,6 +558,8 @@ Billers can therefore take this into consideration when choosing the
 appropriate Peppol transaction that the customer (and their systems) can
 receive.
 
+---
+
 ### Use Case 6: Payment arrangements
 
 A customer and supplier can agree on a payment / instalment plan outside
@@ -620,6 +594,8 @@ have access to the information to choose a suitable option:
 - the payment options/instructions can also be included in cbc:Note
   (free text), which a customer may be able to view via their solution
   UI.
+
+---
 
 ## Version Control
 
