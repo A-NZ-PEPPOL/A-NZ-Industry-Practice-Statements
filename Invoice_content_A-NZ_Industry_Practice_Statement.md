@@ -6,17 +6,23 @@ title: Invoice content A-NZ industry practice statement
   <img src="assets/header.jpg" alt="Header Image" width="100%">
 </p>
 
-# A-NZ industry practice statement Invoice content
+# A-NZ industry practice statement 
+
+# Invoice content
+
+📄 File available for download [here](Update the link)
 
 **Version history**
 
-| Date | Version | Changes |
+| Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Version | Changes |
 |----|----|----|
 | 1 October 2021 | 1.1 | Initial release |
 | 28 February 2022 | 1.1 | Minor corrections |
 | 7 July 2025 | 2.0 | Edited to simplify language and clarify meaning. Updated rating names and descriptions. Added buyer contact email and invoice note as *Required for interoperability*. Prioritised seller contact email over seller contact name and telephone. Added seller trading name as *Recommended*. Deprioritised buyer trading name. Removed payment terms (in favour of payment due date). |
 
-# Background
+---
+
+## Background
 
 Experiences using Peppol invoicing (or eInvoicing) indicate that sending
 only the mandatory data elements required in the [PINT A-NZ Billing
@@ -34,7 +40,9 @@ to support data processing, data integrity, fraud, risk and quality
 checks, or to support industry specific requirements such as dangerous
 goods labels and identification.
 
-# Purpose
+---
+
+## Purpose
 
 This document provides guidance for digital service and software
 providers (collectively referred to here as digital service providers or
@@ -72,6 +80,8 @@ It helps receiving DSPs and those providing services to buyers to:
   data can and should be provided, noting relevant industry specific
   considerations.
 
+---
+
 ## Related documents
 
 DSPs must utilise the [PINT A-NZ Billing
@@ -101,7 +111,9 @@ additional guidance when developing your eInvoicing solutions:
 
 <span id="_Principles" class="anchor"></span>
 
-# Principles
+---
+
+## Principles
 
 The overarching principles for DSPs in relation to Peppol invoice
 content are:
@@ -128,7 +140,9 @@ Buyers should consider the sellers’ potential software limitations and
 balance their chosen information requirements with the burden on sellers
 to provide bespoke information.
 
-# Information you should include in an eInvoice
+---
+
+## Information you should include in an eInvoice
 
 In addition to the mandatory Peppol data elements set out in the [PINT
 A-NZ Billing
@@ -151,6 +165,8 @@ ensure an eInvoice can be processed and paid by buyers.
 The rating names refer to how important an element is for
 interoperability – that is, effective processing and payment of an
 invoice by medium to large enterprise and government buyers.
+
+---
 
 ## Invoice content element ratings
 
@@ -212,6 +228,8 @@ Rated elements are detailed below. See the separate
 for a tabulated list of these rated elements as well as mandatory
 elements of the [PINT A-NZ Billing
 specification](https://docs.peppol.eu/poac/aunz/pint-aunz/).
+
+---
 
 ## Required for interoperability
 
@@ -423,6 +441,8 @@ Invoice note should be used according to the Peppol design. All data
 should be correctly mapped to a dedicated invoice element where one
 exists for that data.
 
+---
+
 ## Recommended
 
 ### 11. Discount or charge
@@ -495,6 +515,8 @@ receipting the supplied goods or services.
 Note that including the buyer contact email is required in most cases –
 see [4. Buyer contact email](#buyer-contact-email).
 
+---
+
 ## Conditional
 
 ### 16. Purchase order line reference
@@ -513,11 +535,13 @@ name](https://docs.peppol.eu/poac/aunz/pint-aunz/trn-invoice/syntax/cac-Accounti
 for internal processing and verification, and sellers should be able to
 provide this when buyers request it.
 
-<img src="./media/media/image1.png"
-style="width:0.27559in;height:0.27559in" /> This is different from
+<img src="assets/i.JPG"
+style="width:0.1in;height:0.1in" /> This is different from
 [buyer
 name](https://docs.peppol.eu/poac/aunz/pint-aunz/trn-invoice/syntax/cac-AccountingCustomerParty/cac-Party/cac-PartyLegalEntity/cbc-RegistrationName/),
 which is mandatory.
+
+---
 
 [^1]: The Peppol network operates in a 4-corner model in which corner 1
     (C1) is the seller, C2 is the seller’s access point, C3 is the
