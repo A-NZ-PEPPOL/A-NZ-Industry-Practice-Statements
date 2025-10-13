@@ -289,8 +289,7 @@ transfer](https://docs.peppol.eu/poac/aunz/pint-aunz/trn-invoice/syntax/cac-Paym
 details on the eInvoice. This is critical for fraud risk management and
 internal control processes.
 
-<img src="./media/media/image1.png"
-style="width:0.27559in;height:0.27559in" /> This should not be relied on
+ℹ️ This should not be relied on
 to update a buyer’s vendor master data unless the buyer has
 independently verified the information to be correct. Buyers are
 expected to have internal controls and/or approval processes in place to
@@ -305,8 +304,7 @@ name](https://docs.peppol.eu/poac/aunz/pint-aunz/trn-invoice/syntax/cac-InvoiceL
 description](https://docs.peppol.eu/poac/aunz/pint-aunz/trn-invoice/syntax/cac-InvoiceLine/cac-Item/cbc-Description/)
 to help buyers with goods receipting and invoice approval processes.
 
-<img src="./media/media/image1.png"
-style="width:0.27559in;height:0.27559in" /> Item description is one of
+ℹ️ Item description is one of
 several available [item
 information](https://docs.peppol.eu/poac/aunz/pint-aunz/trn-invoice/syntax/cac-InvoiceLine/cac-Item/)
 elements available in a Peppol invoice. In some scenarios it may be
@@ -370,8 +368,7 @@ ideally be automated.
 Sending DSPs should support the ability to include any combination of
 reference numbers and avoid making any 2 references mutually exclusive.
 
-<img src="./media/media/image1.png"
-style="width:0.27559in;height:0.27559in" /> Peppol also supports
+ℹ️ Peppol also supports
 referencing one or multiple preceding invoices ([preceding invoice
 reference](https://docs.peppol.eu/poac/aunz/pint-aunz/trn-invoice/syntax/cac-BillingReference/cac-InvoiceDocumentReference/cbc-ID/))
 – for example, when an invoice adjusts or replaces an invoice that was
@@ -410,8 +407,7 @@ The Peppol invoice specification supports the inclusion of URLs within
 invoices, but buyers may be constrained by security limitations and may
 not be able to access them.
 
-<img src="./media/media/image1.png"
-style="width:0.27559in;height:0.27559in" /> Attachments should only be
+ℹ️ Attachments should only be
 included to support the processing of an invoice. Other documents not
 directly related to invoice processing should not be attached. Attaching
 a copy of the invoice in another format (such as PDF) that includes only
@@ -479,8 +475,7 @@ guidelines](https://auspost.com.au/sending/guidelines/addressing-guidelines)
 and [New Zealand Post
 guidelines](https://www.nzpost.co.nz/business/shipping-in-nz/bulk-mail/address-layout-standards).
 
-<img src="./media/media/image1.png"
-style="width:0.27559in;height:0.27559in" /> The [seller country
+ℹ️ The [seller country
 code](https://docs.peppol.eu/poac/aunz/pint-aunz/trn-invoice/syntax/cac-AccountingSupplierParty/cac-Party/cac-PostalAddress/cac-Country/cbc-IdentificationCode/)
 is mandatory according to the Peppol invoice specification.
 
@@ -535,8 +530,7 @@ name](https://docs.peppol.eu/poac/aunz/pint-aunz/trn-invoice/syntax/cac-Accounti
 for internal processing and verification, and sellers should be able to
 provide this when buyers request it.
 
-<img src="assets/i.JPG"
-style="width:0.1in;height:0.1in" /> This is different from
+ℹ️ This is different from
 [buyer
 name](https://docs.peppol.eu/poac/aunz/pint-aunz/trn-invoice/syntax/cac-AccountingCustomerParty/cac-Party/cac-PartyLegalEntity/cbc-RegistrationName/),
 which is mandatory.
