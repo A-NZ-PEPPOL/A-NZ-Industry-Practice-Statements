@@ -187,73 +187,6 @@ development from the Attachments group.
 </tbody>
 </table>
 
-<table>
-<colgroup>
-<col style="width: 5%" />
-<col style="width: 45%" />
-<col style="width: 48%" />
-</colgroup>
-<thead>
-<tr>
-<th></th>
-<th>Issue statement:</th>
-<th>Recommendation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td><p><u>Interpretation of fields:</u></p>
-<p>When sending attachments in an eInvoice, three pieces of information
-must be provided:</p>
-<ol type="1">
-<li><p>Attachment ID (i.e., the reference or identifier of the
-attachment)</p></li>
-<li><p>The file name attribute, and</p></li>
-<li><p>The mime code attribute (i.e., the type/format of attachment,
-based on a code list).</p></li>
-</ol>
-<p>There were different interpretations of the meaning of “File name”
-which has caused inconsistent use of this field. For example, some
-seller solutions have included the file path in the file name
-field.</p></td>
-<td><p><u>Definitions of fields:</u></p>
-<ul>
-<li><p>Attachment ID: This should be the document identifier (similar to
-a PO having a PO number) of the attachment if applicable.</p></li>
-<li><p>File name attribute: This should be the title / name of the
-attached document, e.g., Supporting Document.pdf. Note that the document
-type extension (e.g. .pdf) should be included to simplify storage and
-access by the receiver.</p></li>
-<li><p>Mime code attribute: This field is to specify the format of an
-attachment. The appropriate code from the <a
-href="https://docs.peppol.eu/poacc/billing/3.0/codelist/MimeCode/"><u>Peppol
-code list</u></a> must be used.</p></li>
-</ul>
-<p>Not all implementations will include the file type extension (e.g.
-<em>.pdf</em>) in file name. Therefore, it is recommended that C4 should
-rely on the mime code attribute to determine the format of
-attachments.</p></td>
-</tr>
-<tr>
-<td>2</td>
-<td><p><u>Identifying attachments*</u></p>
-<p>Questions were also raised around instances where multiple
-attachments are included in an eInvoice, and how the buyer (eInvoice
-receiver) should identify whether an attachment is a rendered version of
-the eInvoice or contains supporting information.</p></td>
-<td>
-<p>Refer to guidance below for*:</p>
-<ol>
-<p>2.1 attaching rendered eInvoice<br />
-<em>See UBL example 2.1</em></p>
-<p>2.2 attaching supporting information (e.g., timesheet)<br />
-<em>See UBL example 2.2</em></p>
-</ol></td>
-</tr>
-</tbody>
-</table>
-
 ---
 
 <u>Attachment as a rendered eInvoice:</u>
@@ -265,37 +198,41 @@ messages etc.). In this scenario, it is recommended that Peppol data
 fields for attachments are populated as follows:
 
 <table>
-<colgroup>
-<col style="width: 67%" />
-<col style="width: 32%" />
-</colgroup>
-<thead>
-<tr>
-<th>Peppol fields</th>
-<th>Proposed</th>
-</tr>
-</thead>
 <tbody>
 <tr>
-<td>Attachment ID (<em>cac:Attachment/cbc:ID</em>)</td>
-<td>Invoice number, e.g., INV123</td>
+<td width="425">
+<p><strong>Peppol fields</strong></p>
+</td>
+<td width="207">
+<p><strong>Proposed</strong></p>
+</td>
 </tr>
 <tr>
-<td>File name
-(cac:Attachment/cbc:EmbeddedDocumentBinaryObject/@filename)</td>
-<td><p>Suggested a default value of</p>
-<p>“Rendered_Invoice_INV123.pdf”</p>
-<p>(Acknowledging that not all implementations will include the file
-type extension, e.g. .pdf in file name. Therefore, it is recommended
-that C4 should rely on the mime code attribute to determine the format
-of attachments)</p></td>
+<td width="425">
+<p>Attachment ID (<em>cac:Attachment/cbc:ID</em>)</p>
+</td>
+<td width="207">
+<p>Invoice number, e.g., INV123</p>
+</td>
 </tr>
 <tr>
-<td><p>Mime code</p>
-<p>(<em>cac:Attachment/cbc:EmbeddedDocumentBinaryObject/@mimeCode)</em></p></td>
-<td>Must use one of the code from the <a
-href="https://docs.peppol.eu/poacc/billing/3.0/codelist/MimeCode/">Peppol
-code list</a>, e.g. application/pdf”.</td>
+<td width="425">
+<p>File name (cac:Attachment/cbc:EmbeddedDocumentBinaryObject/@filename)</p>
+</td>
+<td width="207">
+<p>Suggested a default value of</p>
+<p>&ldquo;Rendered_Invoice_INV123.pdf&rdquo;</p>
+<p>(Acknowledging that not all implementations will include the file type extension, e.g. .pdf in file name. Therefore, it is recommended that C4 should rely on the mime code attribute to determine the format of attachments)</p>
+</td>
+</tr>
+<tr>
+<td width="425">
+<p>Mime code</p>
+<p>(<em>cac:Attachment/cbc:EmbeddedDocumentBinaryObject/@mimeCode)</em></p>
+</td>
+<td width="207">
+<p>Must use one of the code from the <a href="https://docs.peppol.eu/poacc/billing/3.0/codelist/MimeCode/">Peppol code list</a>, e.g. application/pdf&rdquo;.</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -316,40 +253,44 @@ code list</a>, e.g. application/pdf”.</td>
 
 ---
 
-
 <u>Attachments as supporting documents</u>
 
 <table>
-<colgroup>
-<col style="width: 67%" />
-<col style="width: 32%" />
-</colgroup>
-<thead>
-<tr>
-<th>Peppol fields</th>
-<th>Proposed</th>
-</tr>
-</thead>
 <tbody>
 <tr>
-<td>Attachment ID (<em>cac:Attachment/cbc:ID</em>)</td>
-<td><p>This should be the identifier of the supporting document, if
-applicable, e.g. timesheetwk18.</p>
-<p>If the attached document does not have an identifier, it is
-recommended to re-use the value of @filename (see below).</p></td>
+<td width="425">
+<p><strong>Peppol fields</strong></p>
+</td>
+<td width="207">
+<p><strong>Proposed</strong></p>
+</td>
 </tr>
 <tr>
-<td>File name
-(cac:Attachment/cbc:EmbeddedDocumentBinaryObject/@filename)</td>
-<td>This is the name of the attached file, e.g.,
-Supporting_document.jpeg.</td>
+<td width="425">
+<p>Attachment ID (<em>cac:Attachment/cbc:ID</em>)</p>
+</td>
+<td width="207">
+<p>This should be the identifier of the supporting document, if applicable, e.g. timesheetwk18.</p>
+<p>&nbsp;</p>
+<p>If the attached document does not have an identifier, it is recommended to re-use the value of @filename (see below).</p>
+</td>
 </tr>
 <tr>
-<td><p>Mime code</p>
-<p>(<em>cac:Attachment/cbc:EmbeddedDocumentBinaryObject/@mimeCode)</em></p></td>
-<td>Must use one of the code from the <a
-href="https://docs.peppol.eu/poacc/billing/3.0/codelist/MimeCode/">Peppol
-code list</a>, e.g. image/jpeg”.</td>
+<td width="425">
+<p>File name (cac:Attachment/cbc:EmbeddedDocumentBinaryObject/@filename)</p>
+</td>
+<td width="207">
+<p>This is the name of the attached file, e.g., Supporting_document.jpeg.</p>
+</td>
+</tr>
+<tr>
+<td width="425">
+<p>Mime code</p>
+<p>(<em>cac:Attachment/cbc:EmbeddedDocumentBinaryObject/@mimeCode)</em></p>
+</td>
+<td width="207">
+<p>Must use one of the code from the <a href="https://docs.peppol.eu/poacc/billing/3.0/codelist/MimeCode/">Peppol code list</a>, e.g. image/jpeg&rdquo;.</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -397,57 +338,73 @@ automation. For your reference, find a sample invoice and example UBL
 below:
 
 *Sample invoice*
-
-<table>
-<colgroup>
-<col style="width: 18%" />
-<col style="width: 12%" />
-<col style="width: 8%" />
-<col style="width: 23%" />
-<col style="width: 3%" />
-<col style="width: 21%" />
-<col style="width: 12%" />
-</colgroup>
-<thead>
-<tr>
-<th><p>Customer Account</p>
-<p>123456</p></th>
-<th colspan="2"><p>Customer PO</p>
-<p>PO123</p></th>
-<th><p>Invoice Date</p>
-<p>01.11.2021</p></th>
-<th colspan="2"><p>Payment Terms</p>
-<p>Next 30 Days</p></th>
-<th><p>Page</p>
-<p>1 of 1</p></th>
-</tr>
-</thead>
+<table width="529">
 <tbody>
 <tr>
-<td colspan="2">BD Sales Document: 5007879</td>
-<td colspan="3"><strong>Drop Ship Reference:</strong> Nil</td>
-<td colspan="2"><p><strong>Contact:</strong></p>
-<p>John.Smith</p></td>
+<td width="96">
+<p><strong>Customer Account</strong></p>
+<p>123456</p>
+</td>
+<td colspan="2" width="113">
+<p><strong>Customer PO</strong></p>
+<p>PO123</p>
+</td>
+<td width="123">
+<p><strong>Invoice Date</strong></p>
+<p>01.11.2021</p>
+</td>
+<td colspan="2" width="131">
+<p><strong>Payment Terms</strong></p>
+<p>Next 30 Days</p>
+</td>
+<td width="66">
+<p><strong>Page</strong></p>
+<p>1 of 1</p>
+</td>
 </tr>
 <tr>
-<td colspan="2"><p>BD Delivery:</p>
-<p>Delivery Address</p></td>
-<td colspan="3"><strong>Mode of Shipment:</strong> Truck FTL</td>
-<td colspan="2"><p><strong>Shipped From:</strong></p>
-<p>ABC Creek NSW 2178</p></td>
+<td colspan="2" width="162">
+<p><strong>BD Sales Document:</strong> 5007879</p>
+</td>
+<td colspan="3" width="188">
+<p><strong>Drop Ship Reference: </strong>Nil</p>
+</td>
+<td colspan="2" width="180">
+<p><strong>Contact:</strong></p>
+<p>John.Smith</p>
+</td>
 </tr>
 <tr>
-<td colspan="2"><p>Carrier Reference</p>
-<p>Nil</p></td>
-<td colspan="3"><strong>Carrier:</strong> ABC Pty.Ltd</td>
-<td colspan="2"><p><strong>Freight Terms:</strong></p>
-<p>DDP PER BD Terms &amp; Conditions</p></td>
+<td colspan="2" width="162">
+<p><strong>BD Delivery:</strong></p>
+<p>Delivery Address</p>
+<p>&nbsp;</p>
+</td>
+<td colspan="3" width="188">
+<p><strong>Mode of Shipment: </strong>Truck FTL</p>
+</td>
+<td colspan="2" width="180">
+<p><strong>Shipped From: </strong></p>
+<p>ABC Creek NSW 2178</p>
+</td>
+</tr>
+<tr>
+<td colspan="2" width="162">
+<p><strong>Carrier Reference</strong></p>
+<p>Nil</p>
+</td>
+<td colspan="3" width="188">
+<p><strong>Carrier: </strong>ABC Pty.Ltd</p>
+</td>
+<td colspan="2" width="180">
+<p><strong>Freight Terms:</strong></p>
+<p>DDP PER BD Terms &amp; Conditions</p>
+</td>
 </tr>
 </tbody>
 </table>
 
 *UBL example 3.1 (non-normative)*
-
 
 ```xml
 <cbc:ID>1234567890</cbc:ID> <!--Invoice number-->
@@ -548,8 +505,7 @@ and be flexible to support all options.
     </tr>
   </tbody>
 </table>
-
----
+<p>&nbsp;</p>
 
 *UBL Example 4.2 - Freight as invoice line (non-normative)*
 
@@ -578,10 +534,9 @@ and be flexible to support all options.
   <cac:Price>
     <cbc:PriceAmount currencyID="AUD">32.00</cbc:PriceAmount>
   </cac:Price>
-</cac:InvoiceLine>
 ```
+<p>&nbsp;</p>
 
----
 
 *UBL Example 4.3 - Freight for an invoice line (non-normative)*
 
@@ -629,7 +584,6 @@ and be flexible to support all options.
     <cbc:AllowanceChargeReasonCode>FC</cbc:AllowanceChargeReasonCode>
     <cbc:Amount currencyID="AUD">68.40</cbc:Amount>
   </cac:AllowanceCharge>
-</cac:InvoiceLine>
 ```
 
 ---
@@ -672,16 +626,12 @@ recommends using cac:AdditionalItemProperty.
   <cac:Item>
     <cbc:Name>Discount</cbc:Name>
     <!--codes omitted for clarity-->
-    <cac:AdditionalItemProperty>
+    <cac:AdditionalItemProperty>Discount</cac:AdditionalItemProperty>
       <cbc:Name>Open reading</cbc:Name>
       <cbc:Value>193167</cbc:Value>
-    </cac:AdditionalItemProperty>
-    <cac:AdditionalItemProperty>
+    </cac:AdditionalItemProperty>Discount</cac:AdditionalItemProperty>
       <cbc:Name>Close reading</cbc:Name>
       <cbc:Value>193802</cbc:Value>
-    </cac:AdditionalItemProperty>
-  </cac:Item>
-</cac:InvoiceLine>
 ```
 
 <u>Option 2</u> - Item Description
@@ -703,7 +653,6 @@ is recommended to use cbc:Description (free text).
   <cac:Price>
     <cbc:PriceAmount currencyID="AUD">0.00592</cbc:PriceAmount>
   </cac:Price>
-</cac:InvoiceLine>
 ```
 
 ---
@@ -739,13 +688,11 @@ of the “invoiced object”. See examples below
 
 *UBL Example 7.1 (non-normative)*
 
-
 ```xml
 <cac:AdditionalDocumentReference>
   <cbc:ID>X685P801197</cbc:ID>
   <cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
   <!--Code 130 indicates this is the identifier of the invoiced “object”-->
-</cac:AdditionalDocumentReference>
 ```
 
 Alternatively, this information may be included in cbc:Note as free text
@@ -773,7 +720,6 @@ scheme ID of 0160 means GTIN.
 
 *UBL Example 7.2 (non-normative) – Invoiced Object at line level*
 
-
 ```xml
 <cac:InvoiceLine>
   <cbc:ID>1</cbc:ID>
@@ -786,13 +732,10 @@ scheme ID of 0160 means GTIN.
   </cac:DocumentReference>
   <cac:Item>
     <!--codes omitted for clarity-->
-  </cac:Item>
-</cac:InvoiceLine>
 ```
 
 *UBL Example 7.3 (non-normative) – Using appropriate item
 identification*
-
 
 ```xml
 <cac:BuyersItemIdentification>
@@ -812,12 +755,10 @@ line item description or name fields (cbc:Description or cbc:Name)
 
 *UBL Example 7.4 (non-normative) – Using Item Description or Name*
 
-
 ```xml
 <cac:Item>
   <cbc:Description>Serial number is X685P801197</cbc:Description>
   <cbc:Name>X685P801197</cbc:Name>
-</cac:Item>
 ```
 
 
@@ -832,7 +773,6 @@ access the information.
 <cac:InvoiceLine>
   <cbc:ID>1</cbc:ID>
   <cbc:Note>Serial number is X685P801197</cbc:Note>
-</cac:InvoiceLine>
 ```
 
 ---
@@ -947,7 +887,6 @@ use DeliveryLocation.*
 
 *Note: this is the location where the goods/services are delivered to.*
 
-
 ```xml
 <cac:DeliveryLocation>
   <cbc:ID>Location123</cbc:ID> <!--scheme ID can be provided if applicable-->
@@ -956,7 +895,6 @@ use DeliveryLocation.*
 
 *UBL Example 9.2 (non-normative) - Using PartyIdentification for
 customer/account number (123abc).*
-
 
 ```xml
 <cac:AccountingCustomerParty>
@@ -967,9 +905,6 @@ customer/account number (123abc).*
     </cac:PartyIdentification>
     <cac:PartyName>
       <cbc:Name>ClientAccountNumber</cbc:Name>
-    </cac:PartyName>
-  </cac:Party>
-</cac:AccountingCustomerParty>
 ```
 
 *UBL Example 9.2 (non-normative) - Using BuyerReference for
@@ -990,88 +925,108 @@ GST registration number.
 The table below lists the Peppol fields with descriptions and examples
 for their usage.
 
-<table>
-<colgroup>
-<col style="width: 13%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 53%" />
-</colgroup>
-<thead>
-<tr>
-<th><strong>Field Name</strong></th>
-<th><strong>Definition</strong></th>
-<th><strong>Rule</strong></th>
-<th><strong>Notes and UBL examples</strong></th>
-</tr>
-</thead>
+
+<table width="100%">
 <tbody>
 <tr>
-<td>Endpoint ID</td>
-<td>Seller or buyer’s electronic address</td>
-<td><p>Mandatory</p>
-<p>One occurrence only</p></td>
-<td><p>This is the digital delivery address for an entity.</p>
-<p>Although most businesses in A-NZ would use an ABN or NZBN as the
-endpoint ID, this does not need to match the entity’s legal
-identifier.</p>
-<p>&lt;cbc:EndpointID
-schemeID="0151"&gt;47555222000&lt;/cbc:EndpointID&gt;</p></td>
+<td width="13%">
+<p><strong>Field Name</strong></p>
+</td>
+<td width="16%">
+<p><strong>Definition</strong></p>
+</td>
+<td width="16%">
+<p><strong>Rule</strong></p>
+</td>
+<td width="53%">
+<p><strong>Notes and UBL examples</strong></p>
+</td>
 </tr>
 <tr>
-<td>Party Legal Entity</td>
-<td><p>Information as an entity has been registered in an official
-registrar as a legal entity or person.</p>
-<p>In A-NZ, this group will include the ABN/NZBN and an entity’s legal
-name.</p></td>
-<td><p>Mandatory</p>
-<p>One occurrence only</p></td>
-<td><p>A Peppol eInvoice always includes an ABN or NZBN, if the seller
-or buyer is located in Australian or New Zealand.</p>
+<td width="13%">
+<p>Endpoint ID</p>
+</td>
+<td width="16%">
+<p>Seller or buyer&rsquo;s electronic address</p>
+</td>
+<td width="16%">
+<p>Mandatory</p>
+<p>One occurrence only</p>
+</td>
+<td width="53%">
+<p>This is the digital delivery address for an entity.</p>
+<p>Although most businesses in A-NZ would use an ABN or NZBN as the endpoint ID, this does not need to match the entity&rsquo;s legal identifier.</p>
+<p>&nbsp;&lt;cbc:EndpointID schemeID="0151"&gt;47555222000&lt;/cbc:EndpointID&gt;</p>
+</td>
+</tr>
+<tr>
+<td width="13%">
+<p>Party Legal Entity</p>
+</td>
+<td width="16%">
+<p>Information as an entity has been registered in an official registrar as a legal entity or person.</p>
+<p>In A-NZ, this group will include the ABN/NZBN and an entity&rsquo;s legal name.</p>
+</td>
+<td width="16%">
+<p>Mandatory</p>
+<p>One occurrence only</p>
+</td>
+<td width="53%">
+<p>A Peppol eInvoice always includes an ABN or NZBN, if the seller or buyer is located in Australian or New Zealand.&nbsp;</p>
 <p>&lt;cac:PartyLegalEntity&gt;</p>
 <p>&lt;cbc:RegistrationName&gt;EntityName&lt;/cbc:RegistrationName&gt;</p>
-<p>&lt;cbc:CompanyID
-schemeID="0151"&gt;47555222000&lt;/cbc:CompanyID&gt;
-&lt;cbc:CompanyLegalForm&gt;Partnership&lt;/cbc:CompanyLegalForm&gt;</p>
-<p>&lt;/cac:PartyLegalEntity&gt;</p></td>
+<p>&lt;cbc:CompanyID&nbsp; schemeID="0151"&gt;47555222000&lt;/cbc:CompanyID&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;cbc:CompanyLegalForm&gt;Partnership&lt;/cbc:CompanyLegalForm&gt;</p>
+<p>&lt;/cac:PartyLegalEntity&gt;</p>
+</td>
 </tr>
 <tr>
-<td>Party Identification</td>
-<td>Other identifiers (e.g. Australian company number, GLN) and business
-names of a seller or buyer.</td>
-<td><p>Optional</p>
-<p>Multiple occurrences</p></td>
-<td><p>&lt;cac:Party&gt;</p>
-<p>&lt;cbc:EndpointID
-schemeID="0151"&gt;47555222000&lt;/cbc:EndpointID&gt;</p>
+<td width="13%">
+<p>Party Identification</p>
+</td>
+<td width="16%">
+<p>Other identifiers (e.g. Australian company number, GLN) and business names of a seller or buyer.</p>
+</td>
+<td width="16%">
+<p>Optional</p>
+<p>Multiple occurrences</p>
+</td>
+<td width="53%">
+<p>&lt;cac:Party&gt;</p>
+<p>&lt;cbc:EndpointID schemeID="0151"&gt;47555222000&lt;/cbc:EndpointID&gt;</p>
 <p>&lt;cac:PartyIdentification&gt;</p>
 <p>&lt;cbc:ID&gt;47555222000&lt;/cbc:ID&gt;</p>
 <p>&lt;/cac:PartyIdentification&gt;</p>
 <p>&lt;cac:PartyName&gt;</p>
 <p>&lt;cbc:Name&gt;Trading Name Ltd&lt;/cbc:Name&gt;</p>
-<p>&lt;/cac:PartyName&gt;</p></td>
+<p>&lt;/cac:PartyName&gt;</p>
+</td>
 </tr>
 <tr>
-<td>Party Tax Scheme</td>
-<td>The seller or buyer’s tax identifier</td>
-<td><p>Conditional*</p>
-<p>In AU, a seller must include GST branch number when a GST branch
-(i.e. specifically registered for GST) is making a taxable sale. In NZ
-when a GST registered organisation makes a taxable sale, the New Zealand
-GST number must be entered as the value.</p></td>
-<td><p>&lt;cac:PartyTaxScheme&gt;</p>
+<td width="13%">
+<p>Party Tax Scheme</p>
+</td>
+<td width="16%">
+<p>The seller or buyer&rsquo;s tax identifier</p>
+</td>
+<td width="16%">
+<p>Conditional*</p>
+<p>In AU, a seller must include GST branch number when a GST branch (i.e. specifically registered for GST) is making a taxable sale. In NZ when a GST registered organisation makes a taxable sale, the New Zealand GST number must be entered as the value.</p>
+</td>
+<td width="53%">
+<p>&lt;cac:PartyTaxScheme&gt;</p>
 <p>&lt;cbc:CompanyID&gt;47555222000&lt;/cbc:CompanyID&gt;</p>
 <p>&lt;cac:TaxScheme&gt;</p>
 <p>&lt;cbc:ID&gt;GST&lt;/cbc:ID&gt;</p>
 <p>&lt;/cac:TaxScheme&gt;</p>
-<p>&lt;/cac:PartyTaxScheme&gt;</p></td>
+<p>&lt;/cac:PartyTaxScheme&gt;</p>
+</td>
 </tr>
 </tbody>
 </table>
 
 ---
 
-## Unit of Measure
+## 11. Unit of Measure
 
 **Issue statement:**
 
@@ -1097,11 +1052,11 @@ GST number must be entered as the value.</p></td>
     of “carton”. The supplier may deliver 10 packages of goods (equals a
     carton) and issues an invoice with UOM of “package”.
 
-> It was agreed that different business processes are the main trigger
-> of issue which is beyond data mapping. eInvoicing does not affect
-> existing processes of how the trading parties manage different unit of
-> measure. Businesses should continue to manage this scenario as they
-> currently do.
+    It was agreed that different business processes are the main trigger
+    of issue which is beyond data mapping. eInvoicing does not affect
+    existing processes of how the trading parties manage different unit of
+    measure. Businesses should continue to manage this scenario as they
+    currently do.
 
 2.  It is acknowledged that some sending solutions may not support the
     full list of / complex UOM, and use generic values such as “EA”
@@ -1117,9 +1072,9 @@ GST number must be entered as the value.</p></td>
     has 24 cans of drinks and the supplier may deliver drinks in cans
     and invoice based on either Carton or Can prices.
 
-> If the price for a carton is \$24, each can has a price of \$1. When
-> the supplier delivers 39 cans of drinks and sends an eInvoice, there
-> are three ways for an eInvoice to display price and quantity:
+    If the price for a carton is \$24, each can has a price of \$1. When
+    the supplier delivers 39 cans of drinks and sends an eInvoice, there
+    are three ways for an eInvoice to display price and quantity:
 
 <table>
 <colgroup>
@@ -1198,69 +1153,34 @@ calculated incorporating base quantity and will therefore be accurate.
 
 **Issue statement:**
 
-> Invoices for specific industries such as utilities and
-> telecommunications may include information to support specific usage
-> data, such as itemised services, peak/off-peak rates and client usage
-> information including comparisons to previous bills. This information
-> is not expected to be required or processed by accounts payable
-> systems, but still needs to be made available to the client in some
-> format.
->
-> ---
+ Invoices for specific industries such as utilities and
+ telecommunications may include information to support specific usage
+ data, such as itemised services, peak/off-peak rates and client usage
+ information including comparisons to previous bills. This information
+ is not expected to be required or processed by accounts payable
+ systems, but still needs to be made available to the client in some
+ format.
+
+
 
 **Recommendation:**
 
-> This type of supporting data is not financial / accounts payable
-> information and unlikely to be processed automatically by the
-> receiving system. Summarised invoices that convey data to support
-> routing and accounts payable actions is the preferred option for
-> inclusion in XML. Rich supporting information such as usage details
-> and service calculations should be conveyed via attachments or through
-> existing systems, such as customer portals.
+ This type of supporting data is not financial / accounts payable
+ information and unlikely to be processed automatically by the
+ receiving system. Summarised invoices that convey data to support
+ routing and accounts payable actions is the preferred option for
+ inclusion in XML. Rich supporting information such as usage details
+ and service calculations should be conveyed via attachments or through
+ existing systems, such as customer portals.
 
 ---
 
 ## Version Control
 
-<table>
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 31%" />
-<col style="width: 53%" />
-</colgroup>
-<thead>
-<tr>
-<th><strong>Version</strong></th>
-<th><strong>Date</strong></th>
-<th><strong>Note</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Draft</td>
-<td>21 July 2022</td>
-<td>Initial draft. Distributed to the Consistent Data Mapping Focus
-Group.</td>
-</tr>
-<tr>
-<td>1.0</td>
-<td>09 Sept 2022</td>
-<td><p>Distributed to the A-NZ All Stakeholders Working Group, Feedback
-incorporated. Key updates:</p>
-<ul>
-<li><p>Noted that the UBL samples through this document are
-non-normative;</p></li>
-<li><p>Under #2 Attachment:</p>
-<ul>
-<li><p>Improved the format</p></li>
-<li><p>Included links to the Attachment Working group.</p></li>
-</ul></li>
-<li><p>Added an explanation for using Base Quantity in an eInvoice,
-under #12 Unit of Measure.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+| Version | Date         | Note                                                                                                                                                                                                 |
+|:---------|:--------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Draft   | 21 July 2022 | Initial draft. Distributed to the Consistent Data Mapping Focus Group.                                                                                                                              |
+| 1.0     | 09 Sept 2022 | Distributed to the A-NZ All Stakeholders Working Group, feedback incorporated. Key updates: <br> • Noted that the UBL samples through this document are non-normative; <br> • Under #2 Attachment: <br> &nbsp;&nbsp;&nbsp;&nbsp; o Improved the format <br> &nbsp;&nbsp;&nbsp;&nbsp; o Included links to the Attachment Working Group. <br> • Added an explanation for using Base Quantity in an eInvoice, under #12 Unit of Measure. |
 
 [^1]: Invoice Content IPS is to surface common data requirements by
     large buyers to assist solutions providers to prioritise and enhance
