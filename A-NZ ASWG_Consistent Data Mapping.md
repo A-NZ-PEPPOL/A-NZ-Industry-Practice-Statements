@@ -829,7 +829,6 @@ right cost centre (internal routing).
 2.  It is unclear which Peppol field should be used for seller-assigned
     client / account number.
 
-    ---
 
 **Recommendation:**
 
@@ -1010,7 +1009,6 @@ for their usage.
 3.  Inconsistent interpretation and system capability relating to the
     eInvoice field Base Quantity.
 
-    ---
 
 **Recommendation:**
 
@@ -1127,7 +1125,6 @@ calculated incorporating base quantity and will therefore be accurate.
  is not expected to be required or processed by accounts payable
  systems, but still needs to be made available to the client in some
  format.
-
 
 
 **Recommendation:**
