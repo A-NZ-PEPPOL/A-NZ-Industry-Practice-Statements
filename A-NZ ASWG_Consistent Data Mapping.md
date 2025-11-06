@@ -8,10 +8,10 @@ title: Guidance and Recommendations for Consistent Data Mapping
 
 # A-NZ Industry Practice Statement
 # Guidance and Recommendations for Consistent Data Mapping
-**Version:** 1.0  
-**Publication Date:** 9 September 2022  
+Version: 1.0  
+Publication Date: 9 September 2022  
 
-📄 File available for download [here](Update the link)
+📄 Copy available for download [here](Update the link)
 
 ---
 
@@ -68,7 +68,7 @@ Consistent mapping and usage of the specification is key to ensure automation an
 
 A joint industry working group developed the [Invoice Contents Industry Practice Statement (IPS)[^1]](https://github.com/A-NZ-PEPPOL/A-NZ-Industry-Practice-Statements/blob/main/A-NZ_Industry_Practice_Statement_%20Invoice_Content_v1.1.docx) in 2020, which discussed buyers’ common data requirements and different systems capabilities. A few overarching principles from the IPS documents were reiterated by the Consistent Data Mapping focus group and it was agreed that the following principles should be adhered to by all participants:
 
- 1. When sending invoices:
+ 1- When sending invoices:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**a.** When the seller (corner 1, or C1) has the data, it should be provided in the invoice XML message.  
 
@@ -76,7 +76,7 @@ A joint industry working group developed the [Invoice Contents Industry Practice
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**i.** The sending solution may not support some invoice data, such as complex item identification information. Peppol supports a number of multi-purpose, free-text fields and users should refer to the **Mapping Questions and Guidance** section in this document for recommendations.  
 
- 2. When receiving invoices:
+ 2- When receiving invoices:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**a.** When the buyer (corner 4, or C4) has been provided with the required information on the invoice, they should endeavour to ‘search for’ this information in all reference and contact fields to process the invoice where possible.  
 
@@ -103,14 +103,11 @@ This section lists the mapping questions that were discussed by the group and th
 ### 1. Using legislated GST rate
 
 | **Issue Statement** | **Recommendation** |
-|---------------------|--------------------|
+|:---------------------|:--------------------|
 | There are cases when an invoice contains a GST rate that is different from the legislated tax rate. This could occur if the seller provides a gross total amount (GST inclusive), and the system calculates the GST amount and GST rate. | The invoice must always include the legislated tax rate (e.g., 10% for GST) as the tax rate for an invoiced item. It should not be a percentage that is calculated from the item price or from any other invoice element.<br>*See UBL example 1.1* |
 
 
-
----
-
-### UBL Example 1.1 (non-normative)
+*UBL Example 1.1 (non-normative)*
 
 ```xml
 <cac:TaxTotal>
@@ -138,6 +135,57 @@ group](https://www.dspanz.org/committees/peppol/anz-peppol-all-stakeholders-work
 will cover the overall topic of Attachments. The below recommendation
 for identifying attachments may receive further consideration and
 development from the Attachments group.
+
+<table width="642">
+<tbody>
+<tr>
+<td width="37">
+<p>&nbsp;</p>
+</td>
+<td width="293">
+<p><strong>Issue statement:</strong></p>
+</td>
+<td width="312">
+<p><strong>Recommendation</strong></p>
+</td>
+</tr>
+<tr>
+<td width="37">
+<p>1</p>
+</td>
+<td width="293">
+<p><u>Interpretation of fields:</u></p>
+<p>When sending attachments in an eInvoice, three pieces of information must be provided:</p>
+<p>1.&nbsp;&nbsp;&nbsp; Attachment ID (i.e., the reference or identifier of the attachment)</p>
+<p>2.&nbsp;&nbsp;&nbsp; The file name attribute, and</p>
+<p>3.&nbsp;&nbsp;&nbsp; The mime code attribute (i.e., the type/format of attachment, based on a code list).</p>
+<p>There were different interpretations of the meaning of &ldquo;File name&rdquo; which has caused inconsistent use of this field.&nbsp; For example, some seller solutions have included the file path in the file name field.&nbsp;</p>
+</td>
+<td width="312">
+<p><u>Definitions of fields:</u></p>
+<p>●&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Attachment ID: This should be the document identifier (similar to a PO having a PO number) of the attachment if applicable.&nbsp;&nbsp;</p>
+<p>●&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; File name attribute: This should be the title / name of the attached document, e.g., Supporting Document.pdf.&nbsp; Note that the document type extension (e.g. .pdf) should be included to simplify storage and access by the receiver.</p>
+<p>●&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mime code attribute: This field is to specify the format of an attachment.&nbsp; The appropriate code from the <a href="https://docs.peppol.eu/poacc/billing/3.0/codelist/MimeCode/">Peppol code list</a> must be used.</p>
+<p><strong>&nbsp;</strong></p>
+<p>Not all implementations will include the file type extension (e.g. <em>.pdf</em>) in file name. Therefore, it is recommended that C4 should rely on the mime code attribute to determine the format of attachments.&nbsp; <strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr>
+<td width="37">
+<p>2</p>
+</td>
+<td width="293">
+<p><u>Identifying attachments*</u></p>
+<p>Questions were also raised around instances where multiple attachments are included in an eInvoice, and how the buyer (eInvoice receiver) should identify whether an attachment is a rendered version of the eInvoice or contains supporting information.</p>
+</td>
+<td width="312">
+<p>Refer to guidance below for*:</p>
+<p>2.1&nbsp; attaching rendered eInvoice <br /> <em>See UBL example 2.1 </em></p>
+<p><em>2.2&nbsp; </em>attaching supporting information (e.g., timesheet)<br /> <em>See UBL example 2.2</em></p>
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <colgroup>
