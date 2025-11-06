@@ -782,17 +782,16 @@ access the information.
 **Issue Statement:**
 
 <ol>
-  <li><u>Default value</u><br>
-  A Peppol eInvoice must contain either a purchase order (PO) number or a buyer reference number. This is commonly required to enable buyers to trigger automated workflows, e.g. for PO matching or invoice approval.<br>
-  Some invoices require neither reference and therefore the sending solution needs to include a “dummy” value to pass validation, e.g., “PO”, “NA” or the invoice number.<br>
-  Some sending solutions have coded the dummy value in the purchase order field. This has caused processing issues for some buyers as the dummy value was treated as a PO number but could not be matched, causing rejection of invoices.
+  <li><u>Default value</u>
+    <p>A Peppol eInvoice must contain either a purchase order (PO) number or a buyer reference number. This is commonly required to enable buyers to trigger automated workflows, e.g. for PO matching or invoice approval.</p>
+    <p>Some invoices require neither reference and therefore the sending solution needs to include a “dummy” value to pass validation, e.g., “PO”, “NA” or the invoice number.</p>
+    <p>Some sending solutions have coded the dummy value in the purchase order field. This has caused processing issues for some buyers as the dummy value was treated as a PO number but could not be matched, causing rejection of invoices.</p>
   </li>
 
-  <li><u>Buyer Reference information</u><br>
-  Buyer Reference information is the alternative but it is a key piece of information that enables buyers to trigger processing workflows. Buyers require different reference information depending on business processes and system capabilities, such as Buyer’s contact (e.g., email or staff name), Trading account number, or a Location ID.
+  <li><u>Buyer Reference information</u>
+    <p>Buyer Reference information is the alternative but it is a key piece of information that enables buyers to trigger processing workflows. Buyers require different reference information depending on business processes and system capabilities, such as Buyer’s contact (e.g., email or staff name), Trading account number, or a Location ID.</p>
   </li>
 </ol>
-
 
 ---
 
