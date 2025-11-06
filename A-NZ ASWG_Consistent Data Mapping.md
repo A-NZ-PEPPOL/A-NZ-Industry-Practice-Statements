@@ -781,28 +781,18 @@ access the information.
 
 **Issue Statement:**
 
-1.  <u>Default value</u>
+<ol>
+  <li><u>Default value</u><br><br>
+  A Peppol eInvoice must contain either a purchase order (PO) number or a buyer reference number. This is commonly required to enable buyers to trigger automated workflows, e.g. for PO matching or invoice approval.<br><br>
+  Some invoices require neither reference and therefore the sending solution needs to include a “dummy” value to pass validation, e.g., “PO”, “NA” or the invoice number.<br><br>
+  Some sending solutions have coded the dummy value in the purchase order field. This has caused processing issues for some buyers as the dummy value was treated as a PO number but could not be matched, causing rejection of invoices.
+  </li>
 
-A Peppol eInvoice must contain either a purchase order (PO) number or a
-buyer reference number. This is commonly required to enable buyers to
-trigger automated workflows, e.g. for PO matching or invoice approval.
+  <li><u>Buyer Reference information</u><br><br>
+  Buyer Reference information is the alternative but it is a key piece of information that enables buyers to trigger processing workflows. Buyers require different reference information depending on business processes and system capabilities, such as Buyer’s contact (e.g., email or staff name), Trading account number, or a Location ID.
+  </li>
+</ol>
 
-Some invoices require neither reference and therefore the sending
-solution needs to include a “dummy” value to pass validation, e.g.,
-“PO”, “NA” or the invoice number.
-
-Some sending solutions have coded the dummy value in the purchase order
-field. This has caused processing issues for some buyers as the dummy
-value was treated as a PO number but could not be matched, causing
-rejection of invoices.
-
-2.  <u>Buyer Reference information</u>
-
-Buyer Reference information is the alternative but it is a key piece of
-information that enables buyers to trigger processing workflows. Buyers
-require different reference information depending on business processes
-and system capabilities, such as Buyer’s contact (e.g., email or staff
-name), Trading account number, or a Location ID.
 
 ---
 
