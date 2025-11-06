@@ -782,13 +782,13 @@ access the information.
 **Issue Statement:**
 
 <ol>
-  <li><u>Default value</u><br><br>
-  A Peppol eInvoice must contain either a purchase order (PO) number or a buyer reference number. This is commonly required to enable buyers to trigger automated workflows, e.g. for PO matching or invoice approval.<br><br>
-  Some invoices require neither reference and therefore the sending solution needs to include a “dummy” value to pass validation, e.g., “PO”, “NA” or the invoice number.<br><br>
+  <li><u>Default value</u><br>
+  A Peppol eInvoice must contain either a purchase order (PO) number or a buyer reference number. This is commonly required to enable buyers to trigger automated workflows, e.g. for PO matching or invoice approval.<br>
+  Some invoices require neither reference and therefore the sending solution needs to include a “dummy” value to pass validation, e.g., “PO”, “NA” or the invoice number.<br>
   Some sending solutions have coded the dummy value in the purchase order field. This has caused processing issues for some buyers as the dummy value was treated as a PO number but could not be matched, causing rejection of invoices.
   </li>
 
-  <li><u>Buyer Reference information</u><br><br>
+  <li><u>Buyer Reference information</u><br>
   Buyer Reference information is the alternative but it is a key piece of information that enables buyers to trigger processing workflows. Buyers require different reference information depending on business processes and system capabilities, such as Buyer’s contact (e.g., email or staff name), Trading account number, or a Location ID.
   </li>
 </ol>
@@ -798,45 +798,23 @@ access the information.
 
 **Recommendation**
 
-1.  <u>Default value</u>
+<ol>
+  <li><u>Default value</u>
+    <ul>
+      <li>Where neither a PO or Buyer Reference is relevant, the default value should be put in <code>cbc:BuyerReference</code>.</li>
+      <li>Default values should be: “BUYER_REFERENCE” or “NA”.</li>
+      <li>Invoice number is <strong>not</strong> a recommended default value as, being an alphanumeric value, it could look like a purchase order reference number and may cause exceptions by receiving systems attempting to match to a PO.</li>
+    </ul>
+    <p>The group noted that the above recommendation may not be implemented immediately by existing solutions.</p>
+    <p>Buyers and receiving systems (C3/C4) should be aware that some sending systems currently include the invoice number in the PO field, and this may continue for some time. Ideally, buyers should provide some flexibility in processing. For example, if the value in the PO field does not match with an existing PO, the invoice is treated as a non-PO invoice.</p>
+  </li>
 
-- Where neither a PO or Buyer Reference is relevant, the default value
-  should be put in cbc:BuyerReference.
-
-- Default values should be: “BUYER_REFERENCE” or “NA”.
-
-- Invoice number is **not** a recommended default value as, being an
-  alphanumeric value, it could look like a purchase order reference
-  number and may cause exceptions by receiving systems attempting to
-  match to a PO.
-
-The group noted that the above recommendation may not be implemented
-immediately by existing solutions.
-
-Buyers and receiving systems (C3/C4) should be aware that some sending
-systems currently include the invoice number in the PO field, and this
-may continue for some time. Ideally, buyers should provide some
-flexibility in processing. For example, if the value in the PO field
-does not match with an existing PO, the invoice is treated as a non-PO
-invoice.
-
-2.  <u>Buyer Reference information</u>
-
-It is recommended that sellers should provide the data when it is
-available to assist with easier processing.
-
-Sellers may not fully understand what their various buyers require as a
-‘buyer reference’. To reduce processing time by the buyer, and where
-practical, a seller/seller’s solution should use designated Peppol
-fields to provide the above information (e.g. Use
-cac:AccountingCustomerParty/cac:Party/cac:Contact to include buyers name
-or email)
-
-Buyers should not expect sellers to understand various data/processing
-needs, and should
-
-endeavour to ‘search for’ required information in other reference and
-contact fields to process the invoice where possible.
+  <li><u>Buyer Reference information</u>
+    <p>It is recommended that sellers should provide the data when it is available to assist with easier processing.</p>
+    <p>Sellers may not fully understand what their various buyers require as a ‘buyer reference’. To reduce processing time by the buyer, and where practical, a seller/seller’s solution should use designated Peppol fields to provide the above information (e.g. use <code>cac:AccountingCustomerParty/cac:Party/cac:Contact</code> to include buyer’s name or email).</p>
+    <p>Buyers should not expect sellers to understand various data/processing needs, and should endeavour to ‘search for’ required information in other reference and contact fields to process the invoice where possible.</p>
+  </li>
+</ol>
 
 ## 9. Organisational specific / Seller assigned client account number 
 
