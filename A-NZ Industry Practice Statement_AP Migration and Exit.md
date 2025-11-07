@@ -9,10 +9,10 @@ title: A-NZ Industry Practice Statement_AP Migration and Exit
 # A-NZ PEPPOL INDUSTRY PRACTICE STATEMENT  
 # Guidance And Recommendations For Access Point Migration And Exit
 
-**Version:** 1.0  
-**Publication Date:** 9 December 2022  
+Version: 1.0  
+Publication Date: 9 December 2022  
 
-📄 File available for download [here](Update the link)
+📄 Copy available for download [here](Update the link)
 
 ---
 
@@ -63,15 +63,15 @@ Common terms used by the group and in this document are included below.
 
 | Term | Description |
 |------|-------------|
-| Service Provider | This is used as an encompassing term for Peppol Service providers who support the functions of both Access Points (APs) providers and Service Metadata Publishers (now referred as Address Capability Look-up, ACL providers) as many A-NZ APs provide their own SMP services. <br>This term can also refer to the party with whom the end user has the service contract with, i.e. BMS or Peppol Service Provider. This acknowledges that some Small and Medium Enterprises may only have a contract with their BMS, and may not be aware of who provides AP and SMP services. |
-| Address Capability Look-up (ACL) providers | This is the new term used in Peppol to refer to the SMP providers.  <br>To avoid confusion, this document continues to use the term SMP and SMP providers. |
-| Existing Service Provider | The Service Provider with whom the end user currently has a contract with i.e. BMS or Peppol Service Provider. |
-| Gaining Service Provider | The Service Provider who the end user identifies as their new Service Provider i.e. BMS or Peppol Service Provider. |
-| Access Point (AP) | Peppol Service Providers that provide document or message transport and translation services in the Peppol network, commonly referred to as corner 2 and corner 3. <br>In Australia, many Access Points also provide SMP services. |
-| Business Management Software (BMS) | This term is used within the document to describe an end user’s software/system (such as accounting software, ERP and FMIS) through which an end user business may access Peppol eInvoicing and eProcurement services. <br>The BMS system:<br>&gt;	may have close integration with a single Peppol Access Point, or may provide interfaces that can be used by several different Peppol Access Points<br>&gt;	may be implemented ‘on premise’ for end users, or may be a cloud solution |
-| Peppol Look-up services | The two key components of Peppol’s Look-up services are SML and SMP:<br>SML is the single central addressing registration and look up facility provided by OpenPeppol. <br>It identifies which SMP to use for discovering the delivery details of an end user. An end user can only have a single entry in the SML, i.e. can only direct to a single SMP to record their receiving capabilities per document type.<br>SMPs (now referred as Address Capability Look-up, ACL) publish and maintain the receiving capabilities of end users (e.g. digital delivery addresses, business processes and document types supported), which is similar to an address book or business registry. <br>An SMP provider is responsible for ensuring end users are discoverable by publishing them in the SML. <br>Although an SMP may be affiliated with a single Access Point, they can record different Access Points for an end user’s various receiving capabilities.<br>More information for SMPs and SML can be [found here](https://peppol.eu/what-is-peppol/peppol-transport-infrastructure/). |
-| Deregistration | In the context of AP migration, the term ‘deregistration’ means the process of removing the listing of an end user from SML, i.e. the end user ceases to be ‘discoverable’. |
-| Switch / Migration | The process by which an end user’s receiving capabilities are transferred from one Peppol Service Provider to another. In the A-NZ market, if an end user changes BMS providers, it is likely that they will need to migrate between Peppol Service Providers. |
+| **Service Provider** | This is used as an encompassing term for Peppol Service providers who support the functions of both Access Points (APs) providers and Service Metadata Publishers (now referred as Address Capability Look-up, ACL providers) as many A-NZ APs provide their own SMP services. <br>This term can also refer to the party with whom the end user has the service contract with, i.e. BMS or Peppol Service Provider. This acknowledges that some Small and Medium Enterprises may only have a contract with their BMS, and may not be aware of who provides AP and SMP services. |
+| **Address Capability Look-up (ACL) providers** | This is the new term used in Peppol to refer to the SMP providers.  <br>To avoid confusion, this document continues to use the term SMP and SMP providers. |
+| **Existing Service Provider** | The Service Provider with whom the end user currently has a contract with i.e. BMS or Peppol Service Provider. |
+| **Gaining Service Provider** | The Service Provider who the end user identifies as their new Service Provider i.e. BMS or Peppol Service Provider. |
+| **Access Point (AP)** | Peppol Service Providers that provide document or message transport and translation services in the Peppol network, commonly referred to as corner 2 and corner 3. <br>In Australia, many Access Points also provide SMP services. |
+| **Business Management Software (BMS)** | This term is used within the document to describe an end user’s software/system (such as accounting software, ERP and FMIS) through which an end user business may access Peppol eInvoicing and eProcurement services. <br>The BMS system:<br>&gt;	may have close integration with a single Peppol Access Point, or may provide interfaces that can be used by several different Peppol Access Points<br>&gt;	may be implemented ‘on premise’ for end users, or may be a cloud solution |
+| **Peppol Look-up services** | The two key components of Peppol’s Look-up services are SML and SMP:<br>**SML** is the single central addressing registration and look up facility provided by OpenPeppol. <br>It identifies which SMP to use for discovering the delivery details of an end user. An end user can only have a single entry in the SML, i.e. can only direct to a single SMP to record their receiving capabilities per document type.<br>**SMPs** (now referred as Address Capability Look-up, ACL) publish and maintain the receiving capabilities of end users (e.g. digital delivery addresses, business processes and document types supported), which is similar to an address book or business registry. <br>An SMP provider is responsible for ensuring end users are discoverable by publishing them in the SML. <br>Although an SMP may be affiliated with a single Access Point, they can record different Access Points for an end user’s various receiving capabilities.<br>More information for SMPs and SML can be [found here](https://peppol.eu/what-is-peppol/peppol-transport-infrastructure/). |
+| **Deregistration** | In the context of AP migration, the term ‘deregistration’ means the process of removing the listing of an end user from SML, i.e. the end user ceases to be ‘discoverable’. |
+| **Switch / Migration** | The process by which an end user’s receiving capabilities are transferred from one Peppol Service Provider to another. In the A-NZ market, if an end user changes BMS providers, it is likely that they will need to migrate between Peppol Service Providers. |
 
 ---
 
@@ -263,6 +263,8 @@ them.*
 *\[Section 9.4.7\] Escalating support issues that the Peppol Service
 Provider cannot resolve to the Peppol Authority.*
 
+---
+
 ## CONSIDERATIONS FOR END USERS
 
 This section summarises key points and questions that the focus group
@@ -296,10 +298,10 @@ future, consider the following to assist the decision making process:**
 3.  Are you switching to another Service Provider for all Peppol
     transactions/document types (e.g. Order, Invoice, Invoice Response),
     or selected document types only?
-
-> *Note: An end user can use different Peppol Service Providers for
-> sending and receiving. The end user can also use different Service
-> Providers to receive different document types.*
+    
+    *Note: An end user can use different Peppol Service Providers for
+    sending and receiving. The end user can also use different Service
+    Providers to receive different document types.*
 
 4.  Ensure a timeframe is agreed between the existing Service Provider
     and the gaining Service Provider, so the migration is smooth and
@@ -315,6 +317,8 @@ future, consider the following to assist the decision making process:**
 
     - The end user may consider communication with relevant trading
       partners if expecting service outages.
+      
+---
 
 ## Version history
 
