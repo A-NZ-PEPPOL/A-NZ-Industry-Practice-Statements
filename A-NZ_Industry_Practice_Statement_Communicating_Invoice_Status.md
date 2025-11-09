@@ -133,17 +133,20 @@ especially important for newly on-boarded suppliers.
 
 The group has agreed on the following best practice principles:
 
+
 <table>
-<tbody>
-<tr>
-<td width="601">
-<ol>
-<li>Where C4 has implemented automated processing, it is best practice to send a response / C4 confirmation of receipt <strong>within 1 hour</strong>, i.e. AB- acknowledgement or a more advanced processing status.</li>
-<li>During C4 processing (manual or automated), when invoice status changes, the change of status should be communicated to C1 within 1 hour or as soon as applicable. E.g. the status changes from AB- Acknowledgement to RE- Rejected.</li>
-</td>
-</tr>
-</tbody>
+  <tbody>
+    <tr>
+      <td width="601">
+        <ol>
+          <li>Where C4 has implemented automated processing, it is best practice to send a response / C4 confirmation of receipt <strong>within 1 hour</strong>, i.e. AB- acknowledgement or a more advanced processing status.</li>
+          <li>During C4 processing (manual or automated), when invoice status changes, the change of status should be communicated to C1 within 1 hour or as soon as applicable. E.g. the status changes from AB- Acknowledgement to RE- Rejected.</li>
+        </ol>
+      </td>
+    </tr>
+  </tbody>
 </table>
+
 
 
 **Note**: It is a requirement by the Peppol BIS that C1 should receive a
@@ -245,40 +248,41 @@ mandatory to use “AB” as the first response.
 The group has agreed on the following best practice principles:
 
 <table>
-<tbody>
-<tr>
-<td width="601">
-<ol start="3">
-<li>The group agreed with the <u>minimal set</u> of response codes required by the Peppol BIS (AB - Acknowledgement, RE - Rejection, AP &ndash; Accepted). More complicated responses can be supported by Peppol.</li>
-<li>While acknowledging that out-of-band communications will continue until the network reaches maturity, C1 and C4 should consider invoice response and ensure existing practices can be easily transitioned to Peppol in the future.</li>
-<li>C4 should provide clear and meaningful reasons to assist C1 to take action. This can be done using a combination of Peppol-defined status reason and action codes and free text fields. Further details are provided in the following sections.</li>
-</ol>
-</td>
-</tr>
-</tbody>
+  <tbody>
+    <tr>
+      <td width="601">
+        <ol start="3">
+          <li>The group agreed with the <u>minimal set</u> of response codes required by the Peppol BIS (AB - Acknowledgement, RE - Rejection, AP &ndash; Accepted). More complicated responses can be supported by Peppol.</li>
+          <li>While acknowledging that out-of-band communications will continue until the network reaches maturity, C1 and C4 should consider invoice response and ensure existing practices can be easily transitioned to Peppol in the future.</li>
+          <li>C4 should provide clear and meaningful reasons to assist C1 to take action. This can be done using a combination of Peppol-defined status reason and action codes and free text fields. Further details are provided in the following sections.</li>
+        </ol>
+      </td>
+    </tr>
+  </tbody>
 </table>
 
+
 <ol start="6">
-<li>Remittance advice and invoice status code “Paid”:</li>
+  <li>Remittance advice and invoice status code “Paid”:</li>
 </ol>
 
-The group has discussed the code “Paid” (which is used to indicate that
-the corresponding invoice has been paid) and agreed that:
+<p style="margin-left: 40px;">
+  The group has discussed the code “Paid” (which is used to indicate that the corresponding invoice has been paid) and agreed that:
+</p>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a.  An Invoice Response (with the code “Paid”) may be used as a simple  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;remittance advice, however noting that it will not cover complicated  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scenarios such as aggregated payments (one payment for multiple  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;invoices).
+<ul style="margin-left: 60px;">
+  <li>
+    a. An Invoice Response (with the code “Paid”) may be used as a simple remittance advice, however noting that it will not cover complicated scenarios such as aggregated payments (one payment for multiple invoices).
+  </li>
+  <li>
+    b. Some C4’s have already implemented remittance advice and prefer to use existing capability (outside of Peppol).<br>
+    <em>Note that remittance advice is not currently supported by Peppol however is being considered.</em>
+  </li>
+  <li>
+    c. For small businesses that do not require a remittance advice, the code Accepted (AP) will provide the certainty of getting paid and the code “Paid” is not a necessity.
+  </li>
+</ul>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b.  Some C4’s have already implemented remittance advice and prefer to  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use existing capability (outside of Peppol).
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  *Note that remittance advice is not currently supported by Peppol  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  however is being considered.*
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c.  For small businesses that do not require a remittance advice, the  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code Accepted (AP) will provide the certainty of getting paid and  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the code “Paid” is not a necessity.
 
 ---
 
