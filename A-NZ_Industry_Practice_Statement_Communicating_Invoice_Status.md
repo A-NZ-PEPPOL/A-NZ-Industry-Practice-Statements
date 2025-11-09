@@ -135,7 +135,6 @@ especially important for newly on-boarded suppliers.
 
 The group has agreed on the following best practice principles:
 
-<div style="background-color: #f0f0f0; padding: 15px; border-radius: 6px;">
 <table>
 <tbody>
 <tr>
@@ -147,12 +146,10 @@ The group has agreed on the following best practice principles:
 </tr>
 </tbody>
 </table>
-</div>
 
 
 **Note**: It is a requirement by the Peppol BIS that C1 should receive a
 response within 3 working days.
-
 
 ### Implementation of Invoice Response
 
