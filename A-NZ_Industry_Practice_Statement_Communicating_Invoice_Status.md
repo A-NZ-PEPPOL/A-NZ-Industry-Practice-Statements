@@ -114,7 +114,6 @@ provide solutions which will help end users’ business processes. The
 group has agreed that service providers play a critical role to
 influence their clients.
 
-<div style="background-color: #f0f0f0; padding: 15px; border-radius: 6px;">
 <table>
 <tbody>
 <tr>
@@ -125,7 +124,6 @@ influence their clients.
 </tr>
 </tbody>
 </table>
-</div>
 
 ### Timeframes for sending a response
 
@@ -246,7 +244,6 @@ mandatory to use “AB” as the first response.
 
 The group has agreed on the following best practice principles:
 
-<div style="background-color: #f0f0f0; padding: 15px; border-radius: 6px;">
 <table>
 <tbody>
 <tr>
@@ -260,28 +257,28 @@ The group has agreed on the following best practice principles:
 </tr>
 </tbody>
 </table>
-</div>
 
 <ol start="6">
 <li>Remittance advice and invoice status code “Paid”:</li>
+</ol>
 
 The group has discussed the code “Paid” (which is used to indicate that
 the corresponding invoice has been paid) and agreed that:
 
-a.  An Invoice Response (with the code “Paid”) may be used as a simple
-    remittance advice, however noting that it will not cover complicated
-    scenarios such as aggregated payments (one payment for multiple
-    invoices).
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a.  An Invoice Response (with the code “Paid”) may be used as a simple  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;remittance advice, however noting that it will not cover complicated  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scenarios such as aggregated payments (one payment for multiple  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;invoices).
 
-b.  Some C4’s have already implemented remittance advice and prefer to
-    use existing capability (outside of Peppol).
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b.  Some C4’s have already implemented remittance advice and prefer to  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use existing capability (outside of Peppol).
 
-> *Note that remittance advice is not currently supported by Peppol
-> however is being considered.*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  *Note that remittance advice is not currently supported by Peppol  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  however is being considered.*
 
-c.  For small businesses that do not require a remittance advice, the
-    code Accepted (AP) will provide the certainty of getting paid and
-    the code “Paid” is not a necessity.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c.  For small businesses that do not require a remittance advice, the  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code Accepted (AP) will provide the certainty of getting paid and  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the code “Paid” is not a necessity.
 
 ---
 
