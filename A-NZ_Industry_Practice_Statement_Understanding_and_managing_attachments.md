@@ -10,9 +10,9 @@ title: Understanding and managing attachments in eInvoices and eCredit Notes
 
 # Understanding and managing attachments in eInvoices and eCredit Notes
 
-**Version: 1.0**
+Version: 1.0
 
-**Publication Date: May 2023**
+Publication Date: May 2023
 
 
 📄 File available for download [here](Update the link)
@@ -174,18 +174,18 @@ systems and processes adapt.
 - Attaching additional information to meet buyers’ invoice processing
   needs
 
-Depending on the nature of the invoiced goods/services, buyers sometimes
-require specific information to support goods receipt, invoice
-validation and approval.
+  Depending on the nature of the invoiced goods/services, buyers sometimes
+  require specific information to support goods receipt, invoice
+  validation and approval.
 
-For example,
+  For example:
 
-- Labour hire invoices commonly include timesheet(s) as attachments,
-  which are required by buyers to verify service hours; or
+  - Labour hire invoices commonly include timesheet(s) as attachments,
+    which are required by buyers to verify service hours; or
 
-- For utility bills, some large buyers may request detailed usage
-  information in specific formats, to assist with internal analysis and
-  cost allocation.
+  - For utility bills, some large buyers may request detailed usage
+    information in specific formats, to assist with internal analysis and
+    cost allocation.
 
 A seller and buyer may also reach mutual agreement on invoice
 attachments. For example, a buyer may have multiple sites or stores.
@@ -244,13 +244,13 @@ principles and guidelines for dealing with attachments.
 
 4.  Virus scanning for attachments
 
-- The Peppol APs (both sending and receiving), as per section 10.3 and
+      - The Peppol APs (both sending and receiving), as per section 10.3 and
   17.1 of the Peppol Service Providers agreement, must have implemented
   industry best practices and measures to avoid security issues, such as
   illicit use, malicious code, viruses, computer intrusions,
   infringements or illegal tampering of data etc.
 
-- End users’ BMS solutions are also expected to implement industry best
+      - End users’ BMS solutions are also expected to implement industry best
   practice security measures. The use of Peppol should not reduce or
   replace existing security measures.
 
