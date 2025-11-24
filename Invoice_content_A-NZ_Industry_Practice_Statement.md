@@ -10,7 +10,7 @@ title: Invoice content A-NZ industry practice statement
 
 # Invoice content
 
-📄 File available for download [here](Update the link)
+📄 Copy available for download [here](Update the link)
 
 **Version history**
 
@@ -118,25 +118,25 @@ additional guidance when developing your eInvoicing solutions:
 The overarching principles for DSPs in relation to Peppol invoice
 content are:
 
-When the seller (corner 1, or C1)[^1] has relevant data, it should be
+1. When the seller (corner 1, or C1)[^1] has relevant data, it should be
 provided in the eInvoice. At a minimum, sellers should ensure that all
 relevant data that would otherwise be contained in a PDF invoice is also
 available in the eInvoice.
 
-All data should be placed in the semantically correct Peppol invoice
+2. All data should be placed in the semantically correct Peppol invoice
 elements as defined in the [PINT A-NZ Billing
 specification](https://docs.peppol.eu/poac/aunz/pint-aunz/).
 
-Buyers and their access points should not reject eInvoices that comply
+3. Buyers and their access points should not reject eInvoices that comply
 with the Peppol invoice specification. If eInvoices fail non-Peppol
 business rule validation (such as purchase order (PO) format checks or
 3-way matching etc.), buyers should use an invoice response message[^2]
 or communicate out of band.
 
-Buyers should search eInvoices for required data as it may not be in the
+4. Buyers should search eInvoices for required data as it may not be in the
 expected data element.
 
-Buyers should consider the sellers’ potential software limitations and
+5. Buyers should consider the sellers’ potential software limitations and
 balance their chosen information requirements with the burden on sellers
 to provide bespoke information.
 
@@ -177,8 +177,8 @@ invoice by medium to large enterprise and government buyers.
 </colgroup>
 <tbody>
 <tr>
-<td>Name</td>
-<td>Description</td>
+<td><strong>Name</strong></td>
+<td><strong>Description</strong>
 </tr>
 <tr>
 <td>Required for interoperability</td>
@@ -222,6 +222,7 @@ industries.</p></li>
 </tr>
 </tbody>
 </table>
+
 
 Rated elements are detailed below. See the separate
 [appendix](https://raw.githubusercontent.com/A-NZ-PEPPOL/A-NZ-Industry-Practice-Statements/main/Invoice_content_IPS_Appendix–Mandatory_and_rated_element.xlsx)
@@ -325,21 +326,21 @@ Five invoice elements support the use of reference numbers used by
 buyers for data matching and to route invoices to the correct person or
 team to approve an invoice:
 
-purchase order (PO) number ([purchase order
+1. purchase order (PO) number ([purchase order
 reference](https://docs.peppol.eu/poac/aunz/pint-aunz/trn-invoice/syntax/cac-OrderReference/cbc-ID/))\*
 
-buyer-assigned reference ([buyer
+2. buyer-assigned reference ([buyer
 reference](https://docs.peppol.eu/poac/aunz/pint-aunz/trn-invoice/syntax/cbc-BuyerReference/))\*
 – for example, a code assigned to an individual, team, branch, or
 geolocation
 
-contract number ([contract
+3. contract number ([contract
 reference](https://docs.peppol.eu/poac/aunz/pint-aunz/trn-invoice/syntax/cac-ContractDocumentReference/cbc-ID/))
 
-project number ([project
+4. project number ([project
 reference](https://docs.peppol.eu/poac/aunz/pint-aunz/trn-invoice/syntax/cac-ProjectReference/cbc-ID/))
 
-tender number ([tender or lot
+5. tender number ([tender or lot
 reference](https://docs.peppol.eu/poac/aunz/pint-aunz/trn-invoice/syntax/cac-OriginatorDocumentReference/cbc-ID/)).
 
 \*It is mandatory in the PINT A-NZ Billing specification for sellers to
