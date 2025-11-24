@@ -14,7 +14,7 @@ Version: 1.0
 
 Publication Date: April 2023
 
-📄 File available for download [here](Update the link)
+📄 Copy available for download [here](Update the link)
 
 Contact the local Peppol Authority for questions or feedback:
 
