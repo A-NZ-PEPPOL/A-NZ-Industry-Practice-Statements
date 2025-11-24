@@ -10,9 +10,9 @@ title: Guidance and implementation options for specific billing scenarios
 
 # Guidance and implementation options for specific billing scenarios
 
-**Version: 1.0**
+Version: 1.0
 
-**Publication Date: April 2023**
+Publication Date: April 2023
 
 📄 File available for download [here](Update the link)
 
@@ -518,16 +518,16 @@ bill that is being adjusted.
 
 In a Peppol eInvoice (or credit note),
 
-- the field cac:BillingReference can be used to reference the previous
+- the field `cac:BillingReference` can be used to reference the previous
   bill number;
 
-- The free text field cbc:Note (invoice level) or line descriptions
-  cac:InvoiceLine/cac:Item/cbc:Name can indicate a previous bill / item
+- The free text field `cbc:Note` (invoice level) or line descriptions
+  `cac:InvoiceLine/cac:Item/cbc:Name` can indicate a previous bill / item
   is being adjusted.
 
 Please note customer solutions may have various capabilities to
 receive/display data, and some solutions may not be able to display the
-previous invoice number (cac:BillingReference), in which case customers
+previous invoice number (`cac:BillingReference`), in which case customers
 can refer to the attached PDF.
 
 <u>Additional information about negative invoices, invoices with zero
@@ -591,7 +591,7 @@ have access to the information to choose a suitable option:
 - the payment options/instructions should be included in the attached
   PDF; or
 
-- the payment options/instructions can also be included in cbc:Note
+- the payment options/instructions can also be included in `cbc:Note`
   (free text), which a customer may be able to view via their solution
   UI.
 
