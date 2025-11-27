@@ -15,7 +15,7 @@ Version: 1.0
 Publication Date: May 2023
 
 
-📄 File available for download [here](Update the link)
+📄 Copy available for download [here](Update the link)
 
 ---
 
