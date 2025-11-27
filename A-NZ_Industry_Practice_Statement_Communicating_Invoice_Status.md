@@ -9,7 +9,7 @@ title: Communicating Invoice Status via Peppol Invoice Response
 # A-NZ Industry Practice Statement
 # Communicating Invoice Status via Peppol Invoice Response  
 
-📄 File available for download [here](Update the link)
+📄 Copy available for download [here](Update the link)
 
 | Issue Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      | Version |
 |------------------|---------|
