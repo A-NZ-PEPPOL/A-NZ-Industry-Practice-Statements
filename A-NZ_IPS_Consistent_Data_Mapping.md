@@ -7,7 +7,7 @@
 Version: 1.0  
 Publication Date: 9 September 2022  
 
-📄 Copy available for download [here](https://github.com/A-NZ-PEPPOL/A-NZ-Industry-Practice-Statements/blob/Dev-IPS-2025/assets/PDF/A-NZ_IPS_Consistent_Data_Mapping.pdf)
+📄 Copy available for download [here](./assets/PDF/A-NZ_IPS_Consistent_Data_Mapping.pdf)
 
 ---
 
