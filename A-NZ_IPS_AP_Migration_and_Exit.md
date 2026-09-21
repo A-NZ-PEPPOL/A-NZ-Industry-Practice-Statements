@@ -1,9 +1,5 @@
----
-title: A-NZ Industry Practice Statement_AP Migration and Exit
----
-
 <p align="center">
-  <img src="assets/header.jpg" alt="Header Image" width="100%">
+  <img src="assets/ips_header.jpg" alt="Black IPS header" width="100%">
 </p>
 
 # A-NZ PEPPOL INDUSTRY PRACTICE STATEMENT  
@@ -12,7 +8,7 @@ title: A-NZ Industry Practice Statement_AP Migration and Exit
 Version: 1.0  
 Publication Date: 9 December 2022  
 
-📄 Copy available for download [here](Update the link)
+📄 Copy available for download [here](./assets/PDF/A-NZ_IPS_AP_Migration_and_Exit.pdf)
 
 ---
 
@@ -57,7 +53,7 @@ here</u>](https://www.dspanz.org/committees/peppol/anz-peppol-all-stakeholders-w
 
 ---
 
-## TERMINOLOGY
+### 1. Terminology 
 
 Common terms used by the group and in this document are included below.
 
@@ -69,7 +65,7 @@ Common terms used by the group and in this document are included below.
 | **Gaining Service Provider** | The Service Provider who the end user identifies as their new Service Provider i.e. BMS or Peppol Service Provider. |
 | **Access Point (AP)** | Peppol Service Providers that provide document or message transport and translation services in the Peppol network, commonly referred to as corner 2 and corner 3. <br>In Australia, many Access Points also provide SMP services. |
 | **Business Management Software (BMS)** | This term is used within the document to describe an end user’s software/system (such as accounting software, ERP and FMIS) through which an end user business may access Peppol eInvoicing and eProcurement services. <br>The BMS system:<br>&gt;	may have close integration with a single Peppol Access Point, or may provide interfaces that can be used by several different Peppol Access Points<br>&gt;	may be implemented ‘on premise’ for end users, or may be a cloud solution |
-| **Peppol Look-up services** | The two key components of Peppol’s Look-up services are SML and SMP:<br>**SML** is the single central addressing registration and look up facility provided by OpenPeppol. <br>It identifies which SMP to use for discovering the delivery details of an end user. An end user can only have a single entry in the SML, i.e. can only direct to a single SMP to record their receiving capabilities per document type.<br>**SMPs** (now referred as Address Capability Look-up, ACL) publish and maintain the receiving capabilities of end users (e.g. digital delivery addresses, business processes and document types supported), which is similar to an address book or business registry. <br>An SMP provider is responsible for ensuring end users are discoverable by publishing them in the SML. <br>Although an SMP may be affiliated with a single Access Point, they can record different Access Points for an end user’s various receiving capabilities.<br>More information for SMPs and SML can be [found here](https://peppol.eu/what-is-peppol/peppol-transport-infrastructure/). |
+| **Peppol Look-up services** | The two key components of Peppol’s Look-up services are SML and SMP:<br>**SML** is the single central addressing registration and look up facility provided by OpenPeppol. <br>It identifies which SMP to use for discovering the delivery details of an end user. An end user can only have a single entry in the SML, i.e. can only direct to a single SMP to record their receiving capabilities per document type.<br>**SMPs** (now referred as Address Capability Look-up, ACL) publish and maintain the receiving capabilities of end users (e.g. digital delivery addresses, business processes and document types supported), which is similar to an address book or business registry. <br>An SMP provider is responsible for ensuring end users are discoverable by publishing them in the SML. <br>Although an SMP may be affiliated with a single Access Point, they can record different Access Points for an end user’s various receiving capabilities.<br>More information for SMPs and SML can be [found here](http://peppol.org/documentation/technical-documentation/edelivery-documentation/). |
 | **Deregistration** | In the context of AP migration, the term ‘deregistration’ means the process of removing the listing of an end user from SML, i.e. the end user ceases to be ‘discoverable’. |
 | **Switch / Migration** | The process by which an end user’s receiving capabilities are transferred from one Peppol Service Provider to another. In the A-NZ market, if an end user changes BMS providers, it is likely that they will need to migrate between Peppol Service Providers. |
 
@@ -107,7 +103,7 @@ Requirements</u>](https://openpeppol.atlassian.net/wiki/spaces/AF/pages/28893184
 and [<u>New
 Zealand</u>](https://openpeppol.atlassian.net/wiki/download/attachments/2889318401/New%20Zealand%20-%20Peppol%20Authority%20Specific%20Requirements.pdf?api=v2).
 Refer to the A-NZ Peppol Guidance Note 10 - [<u>End-user identification
-guidelines</u>](https://github.com/A-NZ-PEPPOL/Guidance-documents) for
+guidelines</u>](https://github.com/A-NZ-PEPPOL/Guidance-documents](https://a-nz-peppol.github.io/Guidance-documents/GuidanceNote10_EndUserIdentification.html) for
 detailed guidance.
 
 ### 3. The gaining Service Provider cannot force the existing Service Provider to release a Peppol ID
@@ -152,7 +148,7 @@ user), the technical deregistration process can commence either
 automatically or manually.
 
 The [<u>Peppol Service Metadata Locator (SML)
-specification</u>](https://docs.peppol.eu/edelivery/sml/PEPPOL-EDN-Service-Metadata-Locator-1.2.0-2021-05-13.pdf)
+specification</u>](https://docs.peppol.eu/edelivery/)
 outlines a migration pattern for the technical switch of business
 metadata from one SMP to another SMP (Section 2.2 Flows Relating to
 Service Metadata Publishers) with nil / little disruption to document
