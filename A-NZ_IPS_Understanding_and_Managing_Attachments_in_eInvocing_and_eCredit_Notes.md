@@ -1,21 +1,17 @@
----
-title: Understanding and managing attachments in eInvoices and eCredit Notes
----
-
 <p align="center">
-  <img src="assets/header.jpg" alt="Header Image" width="100%">
+  <img src="assets/ips_header.jpg" alt="Header Image" width="100%">
 </p>
 
 # A-NZ PEPPOL INDUSTRY PRACTICE STATEMENT
 
-# Understanding and managing attachments in eInvoices and eCredit Notes
+# Understanding and Managing Attachments in eInvoices and eCredit Notes
 
 Version: 1.0
 
 Publication Date: May 2023
 
 
-📄 Copy available for download [here](Update the link)
+📄 Copy available for download [here](./assets/PDF/A-NZ_IPS_Understanding_and_Managing_Attachments_in_eInvocing_and_eCredit_Notes.pdf)
 
 ---
 
@@ -85,7 +81,7 @@ List](https://docs.peppol.eu/poacc/billing/3.0/codelist/MimeCode/) for
 list of supported attachment types.
 
 **Size:** Peppol [SLA
-requirements](https://openpeppol.atlassian.net/wiki/download/attachments/2891481194/Peppol%20SLA%20Requirements_v1.0_APPROVED%202022.02.15.pdf?api=v2)
+requirements](https://peppol.org/documentation/governance-documentation/service-level-requirements-and-explanatory-note/)
 states that, for ‘post-award’ transactions (eInvoice and eProcurement),
 a Peppol AP provider must support messages up to 100MB which includes
 both the XML message and embedded attachments.
