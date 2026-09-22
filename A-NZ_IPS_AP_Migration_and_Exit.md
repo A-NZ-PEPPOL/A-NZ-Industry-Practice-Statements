@@ -3,7 +3,7 @@
 </p>
 
 # A-NZ PEPPOL INDUSTRY PRACTICE STATEMENT  
-# Guidance And Recommendations For Access Point Migration And Exit
+# Guidance and Recommendations For Access Point Migration and Exit
 
 Version: 1.0  
 Publication Date: 9 December 2022  
