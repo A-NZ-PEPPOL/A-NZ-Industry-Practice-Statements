@@ -1,23 +1,14 @@
----
-title: Communicating Invoice Status via Peppol Invoice Response
----
-
 <p align="center">
-  <img src="assets/header.jpg" alt="Header Image" width="100%">
+  <img src="./assets/ips_header.jpg" alt="Header Image" width="100%">
 </p>
 
-# A-NZ Industry Practice Statement
+# A-NZ INDUSTRY PRACTICE STATEMENT
 # Communicating Invoice Status via Peppol Invoice Response  
 
-📄 Copy available for download [here](Update link)
+Version: 1.0  
+Publication Date: 18 December 2020  
 
-| Issue Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      | Version |
-|------------------|---------|
-| 18/12/2020		 | 1.0     |
-
-| Artefacts affected |
-|:--------------------|
-| N/A                |
+📄 Copy available for download [here](./assets/PDF/A-NZ_IPS_Communicating_Invoice_Status.pdf)
 
 ---
 
@@ -65,17 +56,17 @@ can be better realised.
 
 There are three different levels of responses in the Peppol network:
 
-- <u>Transport acknowledgement</u> (Ack) – to inform the result of
+- <ins>Transport acknowledgement</ins> (Ack) – to inform the result of
   message delivery between two access points. Refer to [Peppol AS4
   specifications](https://docs.peppol.eu/edelivery/as4/specification/)
   for details.
 
-- <u>Message level response</u> (MLR) – to inform the outcome of
+- <ins>Message level response</ins> (MLR) – to inform the outcome of
   validation against the specification. Refer to Peppol [MLR
   BIS](https://docs.peppol.eu/poacc/upgrade-3/profiles/36-mlr/) for
   details.
 
-- <u>Business level response</u> (Invoice response) – to inform the
+- <ins>Business level response</ins> (Invoice response) – to inform the
   status or outcome of corner 4 processing the message. This is corner
   4’s business decision, e.g. the invoice is rejected as the purchase
   order number cannot be found.
@@ -100,7 +91,7 @@ this would be for suppliers discovering quickly that their invoices have
 been rejected.
 
 Refer to the [A-NZ Industry Practice Statement - Invoice Content
-document](https://github.com/A-NZ-PEPPOL/A-NZ-Industry-Practice-Statements/raw/main/A-NZ_Industry_Practice_Statment_%20Invoice_Content_v1.0.docx)
+document](https://a-nz-peppol.github.io/A-NZ-Industry-Practice-Statements/Invoice_content_IPS_Appendix%E2%80%93Mandatory_and_rated_element.html)
 for guidance on addressing buyer-specific requirements.
 
 ---
@@ -262,28 +253,26 @@ The group has agreed on the following best practice principles:
 </table>
 
 
-<ol start="6">
-  <li>Remittance advice and invoice status code “Paid”:</li>
-</ol>
 
-<p style="margin-left: 40px;">
-  The group has discussed the code “Paid” (which is used to indicate that the corresponding invoice has been paid) and agreed that:
+
+6. Remittance advice and invoice status code "Paid":
+   
+<p>
+&nbsp;&nbsp;&nbsp;The group has discussed the code "Paid" (which is used to indicate that the corresponding invoice has been paid) and agreed that:
 </p>
 
-<ul style="margin-left: 60px;">
-  <li>
-    a. An Invoice Response (with the code “Paid”) may be used as a simple remittance advice, however noting that it will not cover complicated scenarios such as aggregated payments (one payment for multiple invoices).
-  </li>
-  <li>
-    b. Some C4’s have already implemented remittance advice and prefer to use existing capability (outside of Peppol).<br>
-    <em>Note that remittance advice is not currently supported by Peppol however is being considered.</em>
-  </li>
-  <li>
-    c. For small businesses that do not require a remittance advice, the code Accepted (AP) will provide the certainty of getting paid and the code “Paid” is not a necessity.
-  </li>
-</ul>
+<p>
+&nbsp;&nbsp;&nbsp;a. An Invoice Response (with the code "Paid") may be used as a simple remittance advice, however noting that it will not cover complicated scenarios such as aggregated payments (one payment for multiple invoices).
+</p>
 
+<p>
+&nbsp;&nbsp;&nbsp;b. Some C4's have already implemented remittance advice and prefer to use existing capability (outside of Peppol).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Note that remittance advice is not currently supported by Peppol however is being considered.</em>
+</p>
 
+<p>
+&nbsp;&nbsp;&nbsp;c. For small businesses that do not require a remittance advice, the code Accepted (AP) will provide the certainty of getting paid and the code "Paid" is not a necessity.
+</p>
 ---
 
 ## BUSINESS SCENARIOS
@@ -348,7 +337,6 @@ AP</td>
     <cac:Status>
         <cbc:StatusReasonCode listID="OPStatusReason">NON</cbc:StatusReasonCode>
     </cac:Status>
-</cac:Response>
 ```
 
 ---
