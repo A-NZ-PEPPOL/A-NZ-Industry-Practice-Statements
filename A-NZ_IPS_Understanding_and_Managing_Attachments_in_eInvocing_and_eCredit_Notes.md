@@ -1,3 +1,7 @@
+---
+title: Understanding and Managing Attachments in eInvoices and eCredit Notes
+---
+
 <p align="center">
   <img src="assets/ips_header.jpg" alt="Header Image" width="100%">
 </p>
@@ -13,6 +17,15 @@ Publication Date: May 2023
 
 📄 Copy available for download [here](./assets/PDF/A-NZ_IPS_Understanding_and_Managing_Attachments_in_eInvocing_and_eCredit_Notes.pdf)
 
+Contact the local Peppol Authority for questions or feedback:
+
+- Australia:
+  [<u>eInvoicing@ato.gov.au</u>](mailto:eInvoicing@ato.gov.au)
+
+- New Zealand:
+  [<u>support@nzpeppol.govt.nz</u>](mailto:support@nzpeppol.govt.nz)
+
+  
 ---
 
 ## PURPOSE 
