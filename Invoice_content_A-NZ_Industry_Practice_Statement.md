@@ -3,14 +3,14 @@ title: Invoice content A-NZ industry practice statement
 ---
 
 <p align="center">
-  <img src="assets/header.jpg" alt="Header Image" width="100%">
+  <img src="assets/ips_header.jpg" alt="Header Image" width="100%">
 </p>
 
-# A-NZ industry practice statement 
+# A-NZ Industry Practice Statement 
 
 # Invoice content
 
-📄 Copy available for download [here](Update the link)
+📄 Copy available for download [here](./assets/PDF/Invoice_content_A-NZ_Industry_Practice_Statement.pdf)
 
 **Version history**
 
@@ -178,7 +178,7 @@ invoice by medium to large enterprise and government buyers.
 <tbody>
 <tr>
 <td><strong>Name</strong></td>
-<td><strong>Description</strong>
+<td><strong>Description</strong></td>  
 </tr>
 <tr>
 <td>Required for interoperability</td>
