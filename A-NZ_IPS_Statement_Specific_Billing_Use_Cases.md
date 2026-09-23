@@ -3,18 +3,18 @@ title: Guidance and implementation options for specific billing scenarios
 ---
 
 <p align="center">
-  <img src="assets/header.jpg" alt="Header Image" width="100%">
+  <img src="assets/ips_header.jpg" alt="Header Image" width="100%">
 </p>
 
 # A-NZ Industry Practice Statement
 
-# Guidance and implementation options for specific billing scenarios
+# Guidance and Implementation Options for Specific Billing Scenarios
 
 Version: 1.0
 
 Publication Date: April 2023
 
-📄 Copy available for download [here](Update the link)
+📄 Copy available for download [here](./assets/PDF/A-NZ_IPS_Statement_Specific_Billing_Use_Cases.pdf)
 
 Contact the local Peppol Authority for questions or feedback:
 
@@ -78,7 +78,6 @@ Group</u>](https://www.dspanz.org/committees/peppol/anz-peppol-all-stakeholders-
 this is a living document that may be updated based on feedback and/or
 new billing scenarios that are raised.
 
----
 
 ## Useful resources:
 
@@ -86,11 +85,11 @@ new billing scenarios that are raised.
   scenarios</u>](https://github.com/A-NZ-PEPPOL/A-NZ-PEPPOL-BIS-3.0/tree/master/Message%20examples)
 
 - [<u>A-NZ Peppol Invoice
-  Extension</u>](https://github.com/A-NZ-PEPPOL/A-NZ-PEPPOL-BIS-3.0)
+  Extension</u>](https://docs.peppol.eu/poac/aunz/)
   (eInvoice specification)
 
 - [<u>Guidance
-  documents</u>](https://github.com/A-NZ-PEPPOL/Guidance-documents) to
+  documents</u>](https://a-nz-peppol.github.io/Guidance-documents/) to
   assist with Peppol implementation in A-NZ
 
 - [<u>Consistent data mapping
@@ -102,7 +101,7 @@ new billing scenarios that are raised.
 
 ## eInvoicing considerations in general 
 
-<u>Varying data capabilities by solutions</u>
+<ins>Varying data capabilities by solutions</ins>
 
 The accounts payable/receivable, software solutions have varying
 capabilities to store and display data.
@@ -111,7 +110,7 @@ For example, accounting software used by small businesses might only
 support basic invoicing/finance data and solutions for larger businesses
 are usually more sophisticated and support richer data.
 
-<u>Data requirements and existing business processes</u>
+<ins>Data requirements and existing business processes</ins>
 
 Data requirements and processing can also vary depending on customer
 business requirements. For example, it is recognised that commercial and
@@ -281,7 +280,7 @@ payment as well as a reminder or a notification.
 
 #### Considerations
 
-<u>Payable amount</u>
+<ins>Payable amount</ins>
 
 It is recommended that the data in the XML message of an eInvoice
 **should only include new charges (and/or rebates) that are incurred for
@@ -309,7 +308,7 @@ and rebates.
 The total of new charges and rebates for the period may result in a
 negative invoice total amount that will be included in the XML data.
 
-<u>Reminders for overdue payments</u>
+<ins>Reminders for overdue payments</ins>
 
 There are other channels to remind a customer of amounts owing. For
 example:
@@ -324,7 +323,7 @@ example:
 - Suppliers can continue to use existing channels such as portals or SMS
   messages to send reminders.
 
-<u>User experience</u>
+<ins>User experience</ins>
 
 eInvoicing may change the user experience, in that the amount in the
 eInvoice (new charges) may be different from the total payable amount in
@@ -396,7 +395,7 @@ total payable amount would be \$90 if paid on time).
 
 #### Considerations
 
-<u>Payable amount</u>
+<ins>Payable amount</ins>
 
 The eInvoice XML data can only convey one payable amount and most
 accounting systems are not sophisticated enough to support multiple
@@ -530,8 +529,8 @@ receive/display data, and some solutions may not be able to display the
 previous invoice number (`cac:BillingReference`), in which case customers
 can refer to the attached PDF.
 
-<u>Additional information about negative invoices, invoices with zero
-total and credit notes</u>
+<ins>Additional information about negative invoices, invoices with zero
+total and credit notes</ins>
 
 Peppol supports both credit notes and invoices with positive or
 negative, or zero amounts.
