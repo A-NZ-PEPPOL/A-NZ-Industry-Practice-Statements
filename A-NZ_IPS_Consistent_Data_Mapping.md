@@ -14,6 +14,14 @@ Publication Date: 9 September 2022
 
 📄 Copy available for download [here](./assets/PDF/A-NZ_IPS_Consistent_Data_Mapping.pdf)
 
+Contact the local Peppol Authority for questions or feedback:
+
+- Australia:
+  [<u>eInvoicing@ato.gov.au</u>](mailto:eInvoicing@ato.gov.au)
+
+- New Zealand:
+  [<u>support@nzpeppol.govt.nz</u>](mailto:support@nzpeppol.govt.nz)
+
 ---
 
 ## PURPOSE
