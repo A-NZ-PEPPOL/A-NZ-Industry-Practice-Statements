@@ -1,3 +1,7 @@
+---
+title: Communicating Invoice Status via Peppol Invoice Response 
+---
+
 <p align="center">
   <img src="./assets/ips_header.jpg" alt="Header Image" width="100%">
 </p>
@@ -10,6 +14,15 @@ Publication Date: 18 December 2020
 
 📄 Copy available for download [here](./assets/PDF/A-NZ_IPS_Communicating_Invoice_Status.pdf)
 
+Contact the local Peppol Authority for questions or feedback:
+
+- Australia:
+  [<u>eInvoicing@ato.gov.au</u>](mailto:eInvoicing@ato.gov.au)
+
+- New Zealand:
+  [<u>support@nzpeppol.govt.nz</u>](mailto:support@nzpeppol.govt.nz)
+
+  
 ---
 
 ## PURPOSE
