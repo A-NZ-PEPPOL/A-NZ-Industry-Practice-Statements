@@ -1,13 +1,15 @@
 ---
-title: "Invoice Content Specification – Mandatory and Rated Elements"
+title: "Invoice Content – Mandatory and Rated Elements"
 layout: default
 ---
 
 <p align="center">
-  <img src="assets/header.jpg" alt="Header Image" width="100%">
+  <img src="assets/ips_header.jpg" alt="Header Image" width="100%">
 </p>
 
-# Invoice Content IPS - Mandatory and rated elements of the PINT A-NZ Billing specification
+# A-NZ PEPPOL INDUSTRY PRACTICE STATEMENT
+
+# Invoice Content - Mandatory and Rated Elements of The PINT A-NZ Billing Specification
 
 
 This is a quick reference guide showing all PINT A-NZ Billing specification elements that are either mandatory according to the specification or discussed in the Invoice Content Industry Practice Statement (IPS). It omits all other invoice elements and, as such, is incomplete for the purposes of building a Peppol invoicing solution. As noted in the Invoice Content IPS, 'required for interoperability' and 'recommended' elements should be included when appropriate, but may not be relevant for some end users and will not necessarily have to appear on every eInvoice.
