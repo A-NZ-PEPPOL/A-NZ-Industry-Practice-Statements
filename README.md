@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/ips_header.jpg" alt="Header Image" width="100%">
+  <img src="ips_header.jpg" alt="Header Image" width="100%">
 </p>
 
 # A-NZ-Industry-Practice-Statements
