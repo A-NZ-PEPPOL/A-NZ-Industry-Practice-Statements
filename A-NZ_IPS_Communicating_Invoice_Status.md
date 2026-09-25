@@ -104,7 +104,7 @@ this would be for suppliers discovering quickly that their invoices have
 been rejected.
 
 Refer to the [A-NZ Industry Practice Statement - Invoice Content
-document](https://a-nz-peppol.github.io/A-NZ-Industry-Practice-Statements/Invoice_content_IPS_Appendix%E2%80%93Mandatory_and_rated_element.html)
+document](https://a-nz-peppol.github.io/A-NZ-Industry-Practice-Statements/A-NZ_IPS_Invoice_Content_Mandatory_and_Rated_Elements.html)
 for guidance on addressing buyer-specific requirements.
 
 ---

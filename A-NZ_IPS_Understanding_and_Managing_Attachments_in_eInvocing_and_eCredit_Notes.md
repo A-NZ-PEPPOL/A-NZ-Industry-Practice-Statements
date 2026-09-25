@@ -129,7 +129,7 @@ Note: the data mapping guidance document can be found at both the
 [DSPANZ
 website](https://www.dspanz.org/committees/peppol/anz-peppol-all-stakeholders-working-group/consistent-data-mapping-focus-group/)
 and the [A-NZ Peppol Github
-site](https://github.com/A-NZ-PEPPOL/A-NZ-Industry-Practice-Statements/blob/main/A-NZ%20ASWG_Consistent%20Data%20Mapping%201.0.docx).
+site](https://a-nz-peppol.github.io/A-NZ-Industry-Practice-Statements/A-NZ_IPS_Consistent_Data_Mapping.html).
 
 ### 3. Use cases
 

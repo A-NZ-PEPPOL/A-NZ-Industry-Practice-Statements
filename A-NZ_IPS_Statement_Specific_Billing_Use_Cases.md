@@ -93,7 +93,7 @@ new billing scenarios that are raised.
   assist with Peppol implementation in A-NZ
 
 - [<u>Consistent data mapping
-  guidance</u>](https://github.com/A-NZ-PEPPOL/A-NZ-Industry-Practice-Statements/blob/main/A-NZ%20ASWG_Consistent%20Data%20Mapping%201.0.docx)
+  guidance</u>](https://a-nz-peppol.github.io/A-NZ-Industry-Practice-Statements/A-NZ_IPS_Consistent_Data_Mapping.html)
   developed by [<u>the A-NZ Peppol Stakeholders Working
   Group</u>](https://www.dspanz.org/committees/peppol/anz-peppol-all-stakeholders-working-group/consistent-data-mapping-focus-group/)
 
