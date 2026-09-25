@@ -497,7 +497,7 @@ on the invoice will make it easier for the buyer to contact the seller
 if there are any issues.
 
 Note that including the seller contact email is required in most cases –
-see [3. Seller contact email](#seller-contact-email).
+see [3. Seller contact email](#3-seller-contact-email).
 
 ### 15. Buyer contact name and telephone
 
@@ -509,7 +509,7 @@ to route messages to the appropriate person or team for approval or
 receipting the supplied goods or services.
 
 Note that including the buyer contact email is required in most cases –
-see [4. Buyer contact email](#buyer-contact-email).
+see [4. Buyer contact email](#4-buyer-contact-email).
 
 ---
 
