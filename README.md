@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="assets/header.jpg" alt="Header Image" width="100%">
+  <img src="assets/ips_header.jpg" alt="Header Image" width="100%">
 </p>
 
 # A-NZ-Industry-Practice-Statements
 
 
-Welcome to the **A-NZ Industry Practice Statements hub** — a curated collection of documents offering guidance, recommendations, and use cases to support **Peppol implementation** and enhance **interoperability** across Australia and New Zealand.
+Welcome to the **A-NZ Industry Practice Statements hub** — a curated collection of documents offering guidance, recommendations, and use cases to support **Peppol implementation** and enhance **interoperability** across Australia and New Zealand.The built website can be viewed [here](https://a-nz-peppol.github.io/A-NZ-Industry-Practice-Statements/)
 
 ---
 
