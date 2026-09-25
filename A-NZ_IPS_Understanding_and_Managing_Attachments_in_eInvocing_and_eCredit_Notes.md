@@ -15,7 +15,7 @@ Version: 1.0
 Publication Date: May 2023
 
 
-📄 Copy available for download [here](./assets/PDF/A-NZ_IPS_Understanding_and_Managing_Attachments_in_eInvocing_and_eCredit_Notes.pdf)
+📄 Copy available for download [here](https://github.com/A-NZ-PEPPOL/A-NZ-Industry-Practice-Statements/blob/Dev-IPS-2025/assets/PDF/A-NZ_IPS_Understanding_and_Managing_Attachments_in_eInvocing_and_eCredit_Notes.pdf)
 
 Contact the local Peppol Authority for questions or feedback:
 
