@@ -13,7 +13,7 @@ Version: 1.0
 
 Publication Date: 9 December 2022  
 
-📄 Copy available for download [here](./assets/PDF/A-NZ_IPS_AP_Migration_and_Exit.pdf)
+📄 Copy available for download [here](https://github.com/A-NZ-PEPPOL/A-NZ-Industry-Practice-Statements/blob/Dev-IPS-2025/assets/PDF/A-NZ_IPS_AP_Migration_and_Exit.pdf)
 
 Contact the local Peppol Authority for questions or feedback:
 
@@ -117,7 +117,7 @@ Requirements</u>](https://openpeppol.atlassian.net/wiki/spaces/AF/pages/28893184
 and [<u>New
 Zealand</u>](https://openpeppol.atlassian.net/wiki/download/attachments/2889318401/New%20Zealand%20-%20Peppol%20Authority%20Specific%20Requirements.pdf?api=v2).
 Refer to the A-NZ Peppol Guidance Note 10 - [<u>End-user identification
-guidelines</u>](https://github.com/A-NZ-PEPPOL/Guidance-documents](https://a-nz-peppol.github.io/Guidance-documents/GuidanceNote10_EndUserIdentification.html) for
+guidelines</u>](https://a-nz-peppol.github.io/Guidance-documents/GuidanceNote10_EndUserIdentification.html) for
 detailed guidance.
 
 ### 3. The gaining Service Provider cannot force the existing Service Provider to release a Peppol ID
