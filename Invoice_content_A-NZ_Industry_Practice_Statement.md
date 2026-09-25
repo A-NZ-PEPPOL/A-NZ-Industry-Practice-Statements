@@ -225,7 +225,7 @@ industries.</p></li>
 
 
 Rated elements are detailed below. See the separate
-[appendix](https://a-nz-peppol.github.io/A-NZ-Industry-Practice-Statements/Invoice_content_IPS_Appendix%E2%80%93Mandatory_and_rated_element.html)
+[appendix](https://a-nz-peppol.github.io/A-NZ-Industry-Practice-Statements/A-NZ_IPS_Invoice_Content_Mandatory_and_Rated_Elements.html)
 for a tabulated list of these rated elements as well as mandatory
 elements of the [PINT A-NZ Billing
 specification](https://docs.peppol.eu/poac/aunz/pint-aunz/).
@@ -348,7 +348,7 @@ include either a PO number or buyer reference with a Peppol invoice.
 Where neither are required, a default value of ‘BUYER_REFERENCE’ or ‘NA’
 should be used in the buyer reference element. Refer to section 8 of the
 [consistent data mapping industry practice
-statement](https://raw.githubusercontent.com/A-NZ-PEPPOL/A-NZ-Industry-Practice-Statements/main/A-NZ%20ASWG_Consistent%20Data%20Mapping%201.0.docx)
+statement](https://a-nz-peppol.github.io/A-NZ-Industry-Practice-Statements/A-NZ_IPS_Consistent_Data_Mapping.html)
 for more details.
 
 The buyer will need to tell the seller which reference number(s) should
