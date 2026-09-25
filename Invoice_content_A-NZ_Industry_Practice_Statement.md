@@ -1,5 +1,5 @@
 ---
-title: Invoice content A-NZ industry practice statement
+title: Invoice Content A-NZ Industry Practice Statement
 ---
 
 <p align="center">
@@ -225,7 +225,7 @@ industries.</p></li>
 
 
 Rated elements are detailed below. See the separate
-[appendix](https://raw.githubusercontent.com/A-NZ-PEPPOL/A-NZ-Industry-Practice-Statements/main/Invoice_content_IPS_Appendix–Mandatory_and_rated_element.xlsx)
+[appendix](https://a-nz-peppol.github.io/A-NZ-Industry-Practice-Statements/Invoice_content_IPS_Appendix%E2%80%93Mandatory_and_rated_element.html)
 for a tabulated list of these rated elements as well as mandatory
 elements of the [PINT A-NZ Billing
 specification](https://docs.peppol.eu/poac/aunz/pint-aunz/).
@@ -402,7 +402,7 @@ those attachments.
 
 The A-NZ Peppol GitHub has guidance about [understanding and managing
 attachments in eInvoices and eCredit
-Notes](https://raw.githubusercontent.com/A-NZ-PEPPOL/A-NZ-Industry-Practice-Statements/main/A-NZ%20Industry%20Practice%20Statement_Understanding%20and%20managing%20attachments%20in%20eInvoices%20and%20eCredit%20Notes_v1.docx).
+Notes](https://a-nz-peppol.github.io/A-NZ-Industry-Practice-Statements/A-NZ_IPS_Understanding_and_Managing_Attachments_in_eInvocing_and_eCredit_Notes.html).
 
 The Peppol invoice specification supports the inclusion of URLs within
 invoices, but buyers may be constrained by security limitations and may
