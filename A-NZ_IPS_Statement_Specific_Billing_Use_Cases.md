@@ -364,8 +364,8 @@ eInvoice XML could include these amounts:
     <cbc:Name>Supply charge</cbc:Name>
 ```
 
-Full xml example [<u>available
-here</u>](https://github.com/A-NZ-PEPPOL/A-NZ-PEPPOL-BIS-3.0/blob/master/Message%20examples/AU%20Invoice%20Energy%20Bill%20Example_1.xml).
+Full xml example via PINT A-NZ webpage -> Download resources. [<u>available
+here</u>](https://docs.peppol.eu/poac/aunz/pint-aunz/).
 
 The above eInvoice might be displayed in the buyer’s software UI as
 follows (noting the *Amount due* and the optional *Note*):
@@ -445,8 +445,8 @@ could include these amounts as follows:
 <cbc:LineExtensionAmount currencyID="AUD">30.39</cbc:LineExtensionAmount>
 <cbc:Name>Supply charge</cbc:Name>
 ```
-Full xml example [<u>available
-here</u>](https://github.com/A-NZ-PEPPOL/A-NZ-PEPPOL-BIS-3.0/blob/master/Message%20examples/AU%20Invoice%20Energy%20Bill%20Example_2.xml).
+Full xml example via PINT A-NZ webpage -> Download resources [<u>available
+here</u>](https://docs.peppol.eu/poac/aunz/pint-aunz/).
 
 Which might be displayed in the buyer’s software UI as follows (noting
 the *Amount due* and the optional *Note*):
@@ -545,10 +545,10 @@ transaction types in Peppol, although they are almost identical, with
 just the amounts reversed (negative amounts in an Invoice are equivalent
 to positive amounts on a Credit Note).
 
-See examples of a Peppol [<u>credit
-note</u>](https://github.com/A-NZ-PEPPOL/A-NZ-PEPPOL-BIS-3.0/blob/master/Message%20examples/AU%20Credit_note.xml)
+See examples of a Peppol via PINT A-NZ webpage -> Download resources. [<u>credit
+note</u>](https://docs.peppol.eu/poac/aunz/pint-aunz/)
 and a [<u>negative
-invoice</u>](https://github.com/A-NZ-PEPPOL/A-NZ-PEPPOL-BIS-3.0/blob/master/Message%20examples/AU%20Invoice%20Energy%20Bill%20Example_3_negative_inv.xml).
+invoice</u>](https://docs.peppol.eu/poac/aunz/pint-aunz/).
 The examples effectively convey the same business information.
 
 Some customer solutions may only support Invoices and not Credit Notes
