@@ -14,7 +14,7 @@ Version: 1.0
 
 Publication Date: April 2023
 
-📄 Copy available for download [here](./assets/PDF/A-NZ_IPS_Statement_Specific_Billing_Use_Cases.pdf)
+📄 Copy available for download [here](https://raw.githubusercontent.com/A-NZ-PEPPOL/A-NZ-Industry-Practice-Statements/Dev-IPS-2025/assets/PDF/A-NZ_IPS_Statement_Specific_Billing_Use_Cases.pdf)
 
 Contact the local Peppol Authority for questions or feedback:
 

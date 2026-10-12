@@ -10,7 +10,7 @@ title: Invoice Content A-NZ Industry Practice Statement
 
 # Invoice content
 
-📄 Copy available for download [here](./assets/PDF/Invoice_content_A-NZ_Industry_Practice_Statement.pdf)
+📄 Copy available for download [here](https://raw.githubusercontent.com/A-NZ-PEPPOL/A-NZ-Industry-Practice-Statements/Dev-IPS-2025/assets/PDF/Invoice_content_A-NZ_Industry_Practice_Statement.pdf)
 
 **Version history**
 

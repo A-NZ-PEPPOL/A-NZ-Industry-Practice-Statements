@@ -12,7 +12,7 @@ title: Guidance and recommendations for consistent data mapping
 Version: 1.0  
 Publication Date: 9 September 2022  
 
-📄 Copy available for download [here](./assets/PDF/A-NZ_IPS_Consistent_Data_Mapping.pdf)
+📄 Copy available for download [here](https://raw.githubusercontent.com/A-NZ-PEPPOL/A-NZ-Industry-Practice-Statements/Dev-IPS-2025/assets/PDF/A-NZ_IPS_Consistent_Data_Mapping.pdf)
 
 Contact the local Peppol Authority for questions or feedback:
 

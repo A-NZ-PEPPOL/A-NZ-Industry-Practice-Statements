@@ -12,7 +12,7 @@ title: Communicating Invoice Status via Peppol Invoice Response
 Version: 1.0  
 Publication Date: 18 December 2020  
 
-📄 Copy available for download [here](./assets/PDF/A-NZ_IPS_Communicating_Invoice_Status.pdf)
+📄 Copy available for download [here](https://raw.githubusercontent.com/A-NZ-PEPPOL/A-NZ-Industry-Practice-Statements/Dev-IPS-2025/assets/PDF/A-NZ_IPS_Communicating_Invoice_Status.pdf)
 
 Contact the local Peppol Authority for questions or feedback:
 
